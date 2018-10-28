@@ -1,0 +1,39 @@
+.teams {
+    color: $color-text;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin: $gutter;
+
+    .team {
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 60px 0px;
+        flex-grow: 1;
+        margin: $gutter;
+        padding: $gutter;
+        
+        span.role {
+            margin: 0 0.5em;
+        }
+
+        .tank::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f3ed";
+        }
+    
+
+        .dps::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f6e3";
+        }
+        
+
+        .support::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f0fe";
+        }
+    }
+}

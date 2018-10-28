@@ -7,6 +7,15 @@ h6 {
     color: $color-text;
     text-shadow: $color-text 0px 0px 20px;
     font-weight: normal;
+
+    &.accent {
+        color: $color-accent;
+        text-shadow: none;
+    }
+
+    &.collapse {
+        margin: 0.2em;
+    }
 }
 
 h1 { font-size: 2.0em; }
@@ -17,3 +26,11 @@ h5 { font-size: 1.2em; }
 h6 { font-size: 1.0em; }
 
 em { color: $color-accent;}
+
+a {
+    color: inherit
+}
+
+a:visited {
+    color: inherit;
+}
