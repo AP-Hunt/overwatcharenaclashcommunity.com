@@ -1,0 +1,11 @@
+body {
+    background: $color-background;
+    font-family: "Roboto", sans-serif;
+    font-size: $base-font-size;
+    padding: $gutter;
+}
+
+p {
+    color: $color-text;
+    margin: $gutter;
+}

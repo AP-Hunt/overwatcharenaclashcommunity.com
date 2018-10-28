@@ -1,0 +1,29 @@
+.scrollable {
+    overflow-x: auto;
+}
+
+table.group_table {
+    border: 0;
+    color: $color-text;
+    padding: $gutter;
+
+    td {
+        padding: $gutter;
+    }
+
+    thead {
+        td {
+            color: $color-accent
+        }
+    }
+
+    tbody {
+        td {
+            color: $color-secondary;
+        }
+
+        td.team {
+            color: $color-text;
+        }
+    }
+}

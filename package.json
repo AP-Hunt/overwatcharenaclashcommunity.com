@@ -1,0 +1,28 @@
+{
+  "name": "belong-arenas-tables",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build-html && npm run build-scss && npm run build-js",
+    "build-html": "pug -o dist/ src/pug/index.pug",
+    "build-scss": "node-sass --include-path src/scss/ src/scss/main.scss dist/css/main.css",
+    "build-js": "echo \"f\" | xcopy /Y /E \"node_modules\\tablesort\\dist\" \"dist\\js\"",
+    "watch": "nodemon -e scss,pug -x \"npm run build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/several_badgers/belong-arenas-tables.git"
+  },
+  "author": "Andy Hunt",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/several_badgers/belong-arenas-tables#readme",
+  "description": "",
+  "devDependencies": {
+    "ncp": "^2.0.0",
+    "node-sass": "^4.9.4",
+    "nodemon": "^1.18.5",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "tablesort": "^5.1.0"
+  }
+}

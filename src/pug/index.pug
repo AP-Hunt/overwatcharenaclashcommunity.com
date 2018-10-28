@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        title= "Belong Ovewatch Arena Clash Winter 2018 Group Tables"
+        link(rel="stylesheet"  href="css/main.css")
+
+    body
+        h1 Belong Overwatch Arena Clash Winter 2018 Group Tables (Week 2)
+        p
+            | Since there isn't an official place to see the group tables right now (2018-10-28),
+            | here's an <em>unofficial</em> page
+
+        p
+            | Tables are updated every Sunday, after the weekly recap
+            | show has aired (and after I've seen it)
+
+        hr
+
+        .tables
+            script(src="js/tablesort.min.js")
+            script(src="js/sorts/tablesort.number.min.js")
+
+            include group_1.pug
+            include group_2.pug
+            include group_3.pug
+            include group_4.pug
+
+        footer
+            p
+                | Page created and owned by Humber Hunters' Badger (Andy).
+                | DM me on Discord if this needs taking down, because I can 
+                | imagine Blizzard are probably pretty picky about stuff.
