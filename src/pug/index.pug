@@ -1,14 +1,11 @@
 extends _layout.pug
 
 block vars
-    - var title = "Group Tables (Week 2)"
+    - var title = "Group Tables (Week #{groups.week})"
 
 block content 
     .tables
         script(src="js/tablesort.min.js")
         script(src="js/sorts/tablesort.number.min.js")
 
-        include groups/group_1.pug
-        include groups/group_2.pug
-        include groups/group_3.pug
-        include groups/group_4.pug
+        include _groups.pug

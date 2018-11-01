@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build-html && npm run build-scss && npm run build-js",
-    "build-html": "pug -p src/pug/index.pug -b src/pug/ -o dist/ src/pug/",
-    "build-scss": "node-sass --include-path src/scss/ src/scss/main.scss dist/css/main.css",
-    "build-js": "echo \"f\" | xcopy /Y /E \"node_modules\\tablesort\\dist\" \"dist\\js\"",
-    "watch": "nodemon -e scss,pug -x \"npm run build\""
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -18,11 +14,15 @@
   "homepage": "https://bitbucket.org/several_badgers/belong-arenas-tables#readme",
   "description": "",
   "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2",
     "ncp": "^2.0.0",
     "node-sass": "^4.9.4",
     "nodemon": "^1.18.5",
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6",
+    "rimraf": "^2.6.2",
     "tablesort": "^5.1.0"
   }
 }

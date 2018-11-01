@@ -5,8 +5,15 @@ block vars
 
 block content 
     .teams
-        include teams/enigmas.pug
-        include teams/hunters.pug
-        include teams/lionhearts.pug
-        include teams/pirates.pug
-        include teams/rams.pug
+        each team in teams.teams
+            .team
+                h4.accent.collapse #{team.name}
+                h5.accent.collapse (#{team.location})
+                table
+                    tbody
+                        each player in team.players
+                            tr
+                                td #{player.name}
+                                td
+                                    each r in player.roles
+                                        span(class="role "+r)

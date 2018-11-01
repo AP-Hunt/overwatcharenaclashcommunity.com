@@ -1,0 +1,72 @@
+{
+    "teams": [
+        {
+            "name": "Enigmas",
+            "location": "Milton Keynes",
+            "players": [
+                { "name": "Sparrow", "roles": [] },
+                { "name": "The129", "roles": [] },
+                { "name": "Delstan", "roles": [] },
+                { "name": "Arx", "roles": [] },
+                { "name": "DeeEmmSee", "roles": [] },
+                { "name": "zenzetsu", "roles": [] }
+            ]
+        },
+
+        {
+            "name": "Hunters",
+            "location": "Hull",
+            "players": [
+                { "name": "Thrall", "roles": ["tank"] },	
+                { "name": "Bonchef", "roles": ["dps"] },	
+                { "name": "Badger", "roles": ["support", "tank"] },	
+                { "name": "Ketyatta", "roles": ["support"] },	
+                { "name": "Chazzmancmp", "roles": ["support"] },	
+                { "name": "Radmello", "roles": ["dps", "tank"] },	
+                { "name": "Excise", "roles": ["dps"] }
+            ]
+        },
+
+        {
+            "name": "Lionhearts",
+            "location": "London Wardour Street",
+            "players": [
+                { "name": "Cozel", "roles": [] },	
+                { "name": "Scrumbs", "roles": [] },	
+                { "name": "MrCream", "roles": [] },	
+                { "name": "Sunstorm", "roles": [] },	
+                { "name": "Gaming Duck", "roles": [] },	
+                { "name": "Eddzi", "roles": [] },	
+                { "name": "Feo", "roles": [] }
+            ]
+        },
+
+        {
+            "name": "Pirates",
+            "location": "Portsmouth",
+            "players": [
+                { "name": "Obz", "roles": [] },	
+                { "name": "Urulu", "roles": [] },	
+                { "name": "Spinnaker", "roles": [] },	
+                { "name": "CarryHarry", "roles": [] },	
+                { "name": "Disclosure", "roles": [] },	
+                { "name": "IHave2Thumbs", "roles": [] },	
+                { "name": "Flubber", "roles": [] }
+            ]
+        },
+
+        {
+            "name": "Rams",
+            "location": "Bradford",
+            "players": [
+                { "name": "Gdayshimada1", "roles": [] },	
+                { "name": "Effy", "roles": [] },	
+                { "name": "Dragonlewis12", "roles": [] },	
+                { "name": "Ameizing", "roles": [] },	
+                { "name": "Spicynoodle", "roles": [] },	
+                { "name": "Ionbru", "roles": [] }
+            ]
+        }
+    ]
+}
+

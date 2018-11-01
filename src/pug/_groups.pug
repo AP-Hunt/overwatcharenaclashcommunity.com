@@ -1,0 +1,26 @@
+each table in groups.tables
+    div.scrollable
+        table(class="group_table", id="#{table.id}")
+            caption
+                h4 #{table.name}
+
+            thead
+                tr
+                    td Team
+                    td Played
+                    td Won
+                    td Lost
+                    td(data-sort-default) Points
+
+            tbody
+                each team in table.teams
+                    tr
+                        td.team #{team.name}
+                        td.played #{team.played}
+                        td.won #{team.won}
+                        td.lost #{team.lost}
+                        td.points #{team.points}
+        script
+            | new Tablesort(document.getElementById("#{table.id}"), {
+            |    descending: true
+            | })
