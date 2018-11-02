@@ -8,6 +8,14 @@ image: node:6.9.4
 pipelines:
   default:
     - step:
+        name: Prepare
+        script:
+          - apt-get update && apt-get install -y python-dev
+          - curl -O https://bootstrap.pypa.io/get-pip.py
+          - python get-pip.py
+          - pip install awscli
+                    
+    - step:
         caches:
           - node
         script: # Modify the commands below to build your repository.
@@ -15,6 +23,11 @@ pipelines:
           - npm run build
           
     - step:
+        name: Deploy to S3
         script:
           - aws s3 sync --delete dist/ s3://www.overwatcharenaclashcommunity.com
+          
+    - step:
+        name: Create CloudFront invalidation
+        script:
           - aws cloudfront create-invalidation --distribution-id E3H90N4EFBEWF3 --paths *
