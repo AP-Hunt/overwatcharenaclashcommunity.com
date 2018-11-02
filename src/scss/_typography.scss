@@ -34,3 +34,8 @@ a {
 a:visited {
     color: inherit;
 }
+
+strong {
+    color: $color-text;
+    font-weight: bold;
+}
