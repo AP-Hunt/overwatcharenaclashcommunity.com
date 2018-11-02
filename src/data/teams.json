@@ -1,10 +1,49 @@
 {
     "teams": [
         {
+            "name": "Armada",
+            "location": "Plymouth",
+            "players": [
+                { "name": "Lemone", "roles": [] },
+                { "name": "Percy", "roles": [] },
+                { "name": "Daddyleftme", "roles": [] },
+                { "name": "Swaglyfe", "roles": [] },
+                { "name": "Daddi", "roles": [] },
+                { "name": "SBDD", "roles": [] },
+                { "name": "Kaz", "roles": [] }
+            ]
+        },
+        {
+            "name": "Centurions",
+            "location": "Colchester",
+            "players": [
+                { "name": "Nathmatics", "roles": [] },
+                { "name": "Fewswift", "roles": [] },
+                { "name": "B3nny", "roles": [] },
+                { "name": "Staxes", "roles": [] },
+                { "name": "JAMJAM29", "roles": [] },
+                { "name": "Aiden", "roles": [] },
+                { "name": "Fleisch", "roles": [] }
+            ]
+        },
+        {
+            "name": "Claymores",
+            "location": "Glasgow",
+            "players": [
+                { "name": "LEEKY", "roles": [] },
+                { "name": "IZECSON", "roles": [] },
+                { "name": "SKYA", "roles": [] },
+                { "name": "ATTITUDE", "roles": [] },
+                { "name": "TERRAVIST", "roles": [] },
+                { "name": "NZYME", "roles": [] },
+                { "name": "DUK", "roles": [] }
+            ]
+        },
+        {
             "name": "Enigmas",
             "location": "Milton Keynes",
             "players": [
-                { "name": "Sparrow", "roles": [] },
+                { "name": "SparrowKami", "roles": [] },
                 { "name": "The129", "roles": [] },
                 { "name": "Delstan", "roles": [] },
                 { "name": "Arx", "roles": [] },
@@ -12,7 +51,32 @@
                 { "name": "zenzetsu", "roles": [] }
             ]
         },
-
+        {
+            "name": "Guardians",
+            "location": "Gateshead",
+            "players": [
+                { "name": "FRX", "roles": [] },
+                { "name": "Suzie", "roles": [] },
+                { "name": "Apple", "roles": [] },
+                { "name": "Avali", "roles": [] },
+                { "name": "Korizon", "roles": [] },
+                { "name": "Tactical Taco", "roles": [] },
+                { "name": "Tredenix", "roles": [] }
+            ]
+        },
+        {
+            "name": "Harriers",
+            "location": "Kingston",
+            "players": [
+                { "name": "Kensho", "roles": [] },
+                { "name": "Bambs", "roles": [] },
+                { "name": "Leo", "roles": [] },
+                { "name": "ZachC", "roles": [] },
+                { "name": "Ne0", "roles": [] },
+                { "name": "TheGreenFire", "roles": [] },
+                { "name": "Zeusia", "roles": [] }
+            ]
+        },
         {
             "name": "Hunters",
             "location": "Hull",
@@ -26,7 +90,32 @@
                 { "name": "Excise", "roles": ["dps"] }
             ]
         },
-
+        {
+            "name": "Invincibles",
+            "location": "Preston",
+            "players": [
+                { "name": "ETthefox", "roles": [] },
+                { "name": "Aethon", "roles": [] },
+                { "name": "Atcha6", "roles": [] },
+                { "name": "Dwaema", "roles": [] },
+                { "name": "Chlasea", "roles": [] },
+                { "name": "HIKARI", "roles": [] },
+                { "name": "Michi Peachy", "roles": [] }
+            ]
+        },
+        {
+            "name": "Kestrels",
+            "location": "Craigavon",
+            "players": [
+                { "name": "Agent1337", "roles": [] },
+                { "name": "Oniscis", "roles": [] },
+                { "name": "Liquid", "roles": [] },
+                { "name": "Scopzy", "roles": [] },
+                { "name": "mrEADSON", "roles": [] },
+                { "name": "TheIncRide", "roles": [] },
+                { "name": "DaddyShowMercy", "roles": [] }
+            ]
+        },
         {
             "name": "Lionhearts",
             "location": "London Wardour Street",
@@ -40,7 +129,19 @@
                 { "name": "Feo", "roles": [] }
             ]
         },
-
+        {
+            "name": "Nighthawks",
+            "location": "Norwich",
+            "players": [
+                { "name": "FLUXZIE", "roles": [] },
+                { "name": "Omi", "roles": [] },
+                { "name": "Tiny", "roles": [] },
+                { "name": "Kügell", "roles": [] },
+                { "name": "arinthekissable", "roles": [] },
+                { "name": "BATSY", "roles": [] },
+                { "name": "ExtremeChaos", "roles": [] }
+            ]
+        },
         {
             "name": "Pirates",
             "location": "Portsmouth",
@@ -54,7 +155,6 @@
                 { "name": "Flubber", "roles": [] }
             ]
         },
-
         {
             "name": "Rams",
             "location": "Bradford",
@@ -65,6 +165,83 @@
                 { "name": "Ameizing", "roles": [] },	
                 { "name": "Spicynoodle", "roles": [] },	
                 { "name": "Ionbru", "roles": [] }
+            ]
+        },
+        {
+            "name": "Saints",
+            "location": "Cardiff",
+            "players": [
+                { "name": "Django", "roles": [] },
+                { "name": "Chimpy", "roles": [] },
+                { "name": "Nyx", "roles": [] },
+                { "name": "iatgink", "roles": [] },
+                { "name": "Curio", "roles": [] },
+                { "name": "McMagicMarv", "roles": [] },
+                { "name": "Goon", "roles": [] }
+            ]
+        },
+        {
+            "name": "Smugglers",
+            "location": "Bristol",
+            "players": [
+                { "name": "KavaNope", "roles": [] },
+                { "name": "DBUSKIN", "roles": [] },
+                { "name": "Sodiryfe", "roles": [] },
+                { "name": "Rexyy2k", "roles": [] },
+                { "name": "QuantumDelta", "roles": [] },
+                { "name": "Raccoon", "roles": [] },
+                { "name": "Roberto", "roles": [] }
+            ]
+        },
+        {
+            "name": "Spartans",
+            "location": "Stratford",
+            "players": [
+                { "name": "Hazzabella", "roles": [] },
+                { "name": "Icephoenix", "roles": [] },
+                { "name": "MrTrikss", "roles": [] },
+                { "name": "Lyonia", "roles": [] },
+                { "name": "Kohhtenks", "roles": [] },
+                { "name": "TheBarnyard", "roles": [] },
+                { "name": "Padshack", "roles": [] }
+            ]
+        },
+        {
+            "name": "Steelers",
+            "location": "Teeside",
+            "players": [
+                { "name": "Ruggy Ram", "roles": ["support"] },
+                { "name": "Lythiium", "roles": ["support"] },
+                { "name": "Aggression", "roles": ["support"] },
+                { "name": "Quantum", "roles": ["dps"] },
+                { "name": "Flabajack", "roles": ["dps"] },
+                { "name": "Caeruleus", "roles": ["tank"] },
+                { "name": "Hevelino", "roles": ["tank"] }
+            ]
+        },
+        {
+            "name": "Swarm",
+            "location": "Manchester",
+            "players": [
+                { "name": "DisabledBoi", "roles": [] },
+                { "name": "futuretrunks", "roles": [] },
+                { "name": "GEEVERA", "roles": [] },
+                { "name": "RJ", "roles": [] },
+                { "name": "Lucie", "roles": [] },
+                { "name": "wizzard", "roles": [] },
+                { "name": "Invin", "roles": [] }
+            ]
+        },
+        {
+            "name": "Vikings",
+            "location": "York",
+            "players": [
+                { "name": "Derpy", "roles": [] },
+                { "name": "Fives", "roles": [] },
+                { "name": "MasBlake96", "roles": [] },
+                { "name": "JazzyChoi", "roles": [] },
+                { "name": "JayceeAce", "roles": [] },
+                { "name": "Hariboe", "roles": [] }
             ]
         }
     ]
