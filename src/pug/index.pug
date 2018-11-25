@@ -4,6 +4,9 @@ block vars
     - var title = "Group Tables (Week "+ groups.week + ")"
 
 block content 
+    section
+        include _knockouts.pug
+
     .tables
         script(src="js/tablesort.min.js")
         script(src="js/sorts/tablesort.number.min.js")

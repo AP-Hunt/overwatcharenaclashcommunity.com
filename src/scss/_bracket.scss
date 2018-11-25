@@ -1,0 +1,38 @@
+.bracket {
+    display: flex;
+    float: left;
+    margin: $gutter;
+    width: 100%;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+
+    ol {
+        display: block;
+        float: left;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    
+        &.teams {
+            margin: $gutter;
+
+            li { 
+                margin: 10px;
+                padding-left: $gutter;
+            
+                &.winner {
+                    border-left: solid 3px $color-secondary;
+                }
+
+                &:not(.winner) {
+                    margin: 13px;
+                }
+            }
+        }
+    }
+}
