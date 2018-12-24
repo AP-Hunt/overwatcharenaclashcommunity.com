@@ -19,4 +19,4 @@ pipelines:
           - npm install
           - npm run build
           - aws s3 sync --delete dist/ s3://www.overwatcharenaclashcommunity.com
-          - aws cloudfront create-invalidation --distribution-id E3H90N4EFBEWF3 --paths "/*"
+          - aws cloudfront --region us-east-1 create-invalidation --distribution-id E3H90N4EFBEWF3 --paths "/*"
