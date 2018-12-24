@@ -4,7 +4,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp",
-    "serve": "cd dist/ && php -S localhost:9090"
+    "serve": "gulp serve",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
     "gulp": "^4.0.0",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.2",
+    "gulp-webserver": "^0.9.1",
     "ncp": "^2.0.0",
     "node-sass": "^4.9.4",
     "nodemon": "^1.18.5",

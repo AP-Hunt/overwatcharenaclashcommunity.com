@@ -1,7 +1,8 @@
-const { series, src, dest, pipe } = require("gulp");
+const { series, src, dest, pipe, watch } = require("gulp");
 const sass  = require("gulp-sass");
 const rimraf = require("rimraf");
 const pug = require("gulp-pug");
+const webserver = require("gulp-webserver");
 const fs = require("fs");
 const path = require("path");
 
@@ -62,7 +63,27 @@ function clean(done){
     rimraf("dist/", done);
 }
 
+function serve() {
+    return src(DESTINATIONS.html)
+        .pipe(webserver({
+            livereload: true,
+            open: true,
+            host: "localhost",
+            port: 9090,
+            fallback: "index.html"
+        }));
+}
+
+function watchFiles() {
+    watch(SOURCES.data, buildHTML);
+    watch(SOURCES.js, buildJS);
+    watch(SOURCES.scss, buildCSS);
+    watch(SOURCES.pug, buildHTML);
+}
+
+exports.default = series(clean, buildCSS, buildHTML, buildJS);
 exports.buildCSS = buildCSS;
 exports.buildJS = buildJS;
 exports.buildHTML = buildHTML;
-exports.default = series(clean, buildCSS, buildHTML, buildJS);
+exports.serve = serve;
+exports.watch = series(exports.default, serve, watchFiles);
