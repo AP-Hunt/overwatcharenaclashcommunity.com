@@ -60,7 +60,7 @@ function buildArchives(done) {
             let outputPath = DESTINATIONS.html.archives(dir);
             archives.archives.push({
                 "name": data._meta.title,
-                "path": "/archives/"+dir
+                "path": "/archives/"+dir+"/index.html"
             });
             generators.push(function () {
                 return renderPug(data, outputPath);
