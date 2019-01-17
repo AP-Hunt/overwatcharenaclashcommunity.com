@@ -1,0 +1,55 @@
+{
+    "begun": true,
+    "overall_winner": "Saints",
+    "rounds": {
+        "1": {
+            "matches": [
+                {
+                    "team_a": "Hunters",
+                    "team_b": "Saints",
+                    "winner": "Saints"
+                },
+                {
+                    "team_a": "Steelers",
+                    "team_b": "Kestrels",
+                    "winner": "Steelers"
+                },
+                {
+                    "team_a": "Claymores",
+                    "team_b": "Pirates",
+                    "winner": "Pirates"
+                },
+                {
+                    "team_a": "Spartans",
+                    "team_b": "Invincibles",
+                    "winner": "Spartans"
+                }
+            ]
+        },
+
+        "2": {
+            "matches": [
+                {
+                    "team_a": "Saints",
+                    "team_b": "Steelers",
+                    "winner": "Steelers"
+                },
+                {
+                    "team_a": "Pirates",
+                    "team_b": "Spartans",
+                    "winner": "Spartans"
+                }
+            ]
+        },
+
+        "3": {
+            "matches": [
+                {
+                    "team_a": "Saints",
+                    "team_b": "Sparans",
+                    "winner": "Saints"
+                }
+            ]
+        }
+    }
+}

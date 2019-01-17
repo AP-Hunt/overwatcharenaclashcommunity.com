@@ -1,46 +1,30 @@
-h4 Knockout Stages
-section.bracket
-    section.round
+if knockouts.begun
+    h4 Knockout Stages
 
-        ol.round-1
-            li.match
-                ol.teams
-                    li Hunters
-                    li.winner Saints
+    section.bracket
+        each round, number in knockouts.rounds
+            section.round
+                ol(class="round-"+number)
+                    each match in round.matches
+                        li.match
+                            - var team_a_winner = (match.winner == match.team_a)? true : false;
+                            - var played = (match.winner != null)? true : false;
+                            if played
+                                if team_a_winner
+                                    ol.teams
+                                        li.winner #{match.team_a}
+                                        li #{match.team_b}
+                                else
+                                    ol.teams
+                                        li #{match.team_a}
+                                        li.winner #{match.team_b}
+                            else
+                                ol.teams
+                                    li #{match.team_a}
+                                    li #{match.team_b}
 
-            li.match
-                ol.teams
-                    li.winner Steelers
-                    li Kesterls
-
-            li.match
-                ol.teams
-                    li Claymores
-                    li.winner Pirates
-                
-            li.match
-                ol.teams
-                    li.winner Spartans
-                    li Invincibles
-
-    section.round
-        ol.round-2
-            li.match
-                ol.teams
-                    li.winner Saints
-                    li Steelers
-
-            li.match
-                ol.teams
-                    li Pirates
-                    li.winner Spartans
-
-    section.round
-        ol.round-3
-            li.match
-                ol.teams
-                    li.winner Saints
-                    li Spartans
-    .right.round
-        h1 Overwatch Arena Clash Winter 2018 Winner
-        h1.accent(style="text-align: center") Saints
+        - var completed = (knockouts.overall_winner != null)? true : false;
+        if completed
+            .right.round
+                h1 #{_meta.title} Winner
+                h1.accent(style="text-align: center") #{knockouts.overall_winner}

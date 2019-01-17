@@ -1,0 +1,120 @@
+{
+    "_example": { "name": "ETthefox", "roles": ["dps", "tank", "support"] },
+    "teams": [
+        {
+            "name": "Armada",
+            "location": "Plymouth",
+            "players": [
+            ]
+        },
+        {
+            "name": "Centurions",
+            "location": "Colchester",
+            "players": [
+            ]
+        },
+        {
+            "name": "Claymores",
+            "location": "Glasgow",
+            "players": [
+            ]
+        },
+        {
+            "name": "Enigmas",
+            "location": "Milton Keynes",
+            "players": [
+            ]
+        },
+        {
+            "name": "Guardians",
+            "location": "Gateshead",
+            "players": [
+            ]
+        },
+        {
+            "name": "Harriers",
+            "location": "Kingston",
+            "players": [
+            ]
+        },
+        {
+            "name": "Hunters",
+            "location": "Hull",
+            "players": [
+            ]
+        },
+        {
+            "name": "Invincibles",
+            "location": "Preston",
+            "players": [
+            ]
+        },
+        {
+            "name": "Kestrels",
+            "location": "Craigavon",
+            "players": [
+            ]
+        },
+        {
+            "name": "Lionhearts",
+            "location": "London Wardour Street",
+            "players": [
+            ]
+        },
+        {
+            "name": "Nighthawks",
+            "location": "Norwich",
+            "players": [
+            ]
+        },
+        {
+            "name": "Pirates",
+            "location": "Portsmouth",
+            "players": [
+            ]
+        },
+        {
+            "name": "Rams",
+            "location": "Bradford",
+            "players": [
+            ]
+        },
+        {
+            "name": "Saints",
+            "location": "Cardiff",
+            "players": [
+            ]
+        },
+        {
+            "name": "Smugglers",
+            "location": "Bristol",
+            "players": [
+            ]
+        },
+        {
+            "name": "Spartans",
+            "location": "Stratford",
+            "players": [
+            ]
+        },
+        {
+            "name": "Steelers",
+            "location": "Teeside",
+            "players": [
+            ]
+        },
+        {
+            "name": "Swarm",
+            "location": "Manchester",
+            "players": [
+            ]
+        },
+        {
+            "name": "Vikings",
+            "location": "York",
+            "players": [
+            ]
+        }
+    ]
+}
+

@@ -1,0 +1,11 @@
+{
+    "_example": {
+        "team_a": "Hunters",
+        "team_b": "Saints",
+        "winner": "Saints"
+    },
+    "begun": false,
+    "overall_winner": null,
+    "rounds": {
+    }
+}

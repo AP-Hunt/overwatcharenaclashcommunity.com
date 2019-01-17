@@ -28,7 +28,11 @@ h6 { font-size: 1.0em; }
 em { color: $color-accent;}
 
 a {
-    color: inherit
+    color: inherit;
+
+    &.accent {
+        color: $color-accent
+    }
 }
 
 a:visited {
