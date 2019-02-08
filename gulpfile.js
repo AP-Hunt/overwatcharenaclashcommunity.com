@@ -91,7 +91,13 @@ function importData(targetDir) {
         if (dirEntries.hasOwnProperty(f)) {
             let fileName = dirEntries[f];
             let filePath = path.join(targetDir, fileName);
-            var contents = JSON.parse(fs.readFileSync(filePath));
+            try 
+            {
+                var contents = JSON.parse(fs.readFileSync(filePath));
+            }catch(e){
+                console.error("Failed to parse JSON file: " + filePath)
+                throw e;
+            }
             data[fileName.split(".")[0]] = contents;
         }
     }

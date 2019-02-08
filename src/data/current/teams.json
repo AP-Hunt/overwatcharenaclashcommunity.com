@@ -8,6 +8,18 @@
             ]
         },
         {
+            "name": "Arrows",
+            "location": "Nottingham",
+            "players":[
+            ]
+        },
+        {
+            "name": "Brawlers",
+            "location": "Bristol",
+            "players":[
+            ]
+        },
+        {
             "name": "Centurions",
             "location": "Colchester",
             "players": [
@@ -52,6 +64,12 @@
         {
             "name": "Kestrels",
             "location": "Craigavon",
+            "players": [
+            ]
+        },
+        {
+            "name": "Leviathans",
+            "location": "West Thurrock",
             "players": [
             ]
         },

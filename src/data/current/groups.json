@@ -1,44 +1,51 @@
 {
-    "week": 0,
-    "archive": true,
+    "week": 1,
+    "archive": false,
     "tables": [
         {
             "id": "group-1",
             "name": "Group 1",
             "teams": [
                 {
-                    "name": "Armada",
-                    "played": 4,
-                    "won": 2,
-                    "lost": 2,
-                    "points": 2
-                },
-                {
-                    "name": "Centurions",
-                    "played": 4,
-                    "won": 1,
-                    "lost": 3,
-                    "points": 1
-                },
-                {
-                    "name": "Hunters",
-                    "played": 4,
-                    "won": 4,
+                    "name": "Saints",
+                    "played": 0,
+                    "won": 0,
                     "lost": 0,
-                    "points": 4
+                    "points": 0
+                },
+                {
+                    "name": "Claymores",
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
+                    "points": 0
                 },
                 {
                     "name": "Invincibles",
-                    "played": 4,
-                    "won": 3,
-                    "lost": 1,
-                    "points": 3
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
+                    "points": 0
+                },
+                {
+                    "name": "Enigmas",
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
+                    "points": 0
                 },
                 {
                     "name": "Nighthawks",
-                    "played": 4,
+                    "played": 0,
                     "won": 0,
-                    "lost": 4,
+                    "lost": 0,
+                    "points": 0
+                },
+                {
+                    "name": "Hunters",
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
                     "points": 0
                 }
             ]
@@ -48,38 +55,45 @@
             "name": "Group 2",
             "teams": [
                 {
-                    "name": "Alt",
-                    "played": 4,
-                    "won": 2,
-                    "lost": 2,
-                    "points": 2
-                },
-                {
-                    "name": "Claymores",
-                    "played": 4,
-                    "won": 3,
-                    "lost": 1,
-                    "points": 3
-                },
-                {
-                    "name": "Guardians",
-                    "played": 4,
-                    "won": 2,
-                    "lost": 2,
-                    "points": 2
-                },
-                {
-                    "name": "Kestrels",
-                    "played": 4,
-                    "won": 3,
-                    "lost": 1,
-                    "points": 3
-                },
-                {
-                    "name": "Smugglers",
-                    "played": 4,
+                    "name": "Spartans",
+                    "played": 0,
                     "won": 0,
-                    "lost": 4,
+                    "lost": 0,
+                    "points": 0
+                },
+                {
+                    "name": "Vikings",
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
+                    "points": 0
+                },
+                {
+                    "name": "Harriers",
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
+                    "points": 0
+                },
+                {
+                    "name": "Leviathans",
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
+                    "points": 0
+                },
+                {
+                    "name": "Centurions",
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
+                    "points": 0
+                },
+                {
+                    "name": "Brawlers",
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
                     "points": 0
                 }
             ]
@@ -89,39 +103,39 @@
             "name": "Group 3",
             "teams": [
                 {
-                    "name": "Enigmas",
-                    "played": 4,
-                    "won": 2,
-                    "lost": 2,
-                    "points": 2
-                },
-                {
-                    "name": "Lionhearts",
-                    "played": 4,
-                    "won": 1,
-                    "lost": 3,
-                    "points": 1
-                },
-                {
-                    "name": "Pirates",
-                    "played": 4,
-                    "won": 3,
-                    "lost": 1,
-                    "points": 3
-                },
-                {
-                    "name": "Rams",
-                    "played": 4,
+                    "name": "Steelers",
+                    "played": 0,
                     "won": 0,
-                    "lost": 4,
+                    "lost": 0,
                     "points": 0
                 },
                 {
-                    "name": "Steelers",
-                    "played": 4,
-                    "won": 4,
+                    "name": "Guardians",
+                    "played": 0,
+                    "won": 0,
                     "lost": 0,
-                    "points": 4
+                    "points": 0
+                },
+                {
+                    "name": "Kestrels",
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
+                    "points": 0
+                },
+                {
+                    "name": "Lionhearts",
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
+                    "points": 0
+                },
+                {
+                    "name": "Armada",
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
+                    "points": 0
                 }
             ]
         },
@@ -130,39 +144,39 @@
             "name": "Group 4",
             "teams": [
                 {
-                    "name": "Harriers",
-                    "played": 4,
-                    "won": 1,
-                    "lost": 3,
-                    "points": 1
-                },
-                {
-                    "name": "Saints",
-                    "played": 4,
-                    "won": 3,
-                    "lost": 1,
-                    "points": 3
-                },
-                {
-                    "name": "Spartans",
-                    "played": 4,
-                    "won": 4,
+                    "name": "Pirates",
+                    "played": 0,
+                    "won": 0,
                     "lost": 0,
-                    "points": 4
+                    "points": 0
+                },
+                {
+                    "name": "Arrows",
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
+                    "points": 0
                 },
                 {
                     "name": "Swarm",
-                    "played": 4,
-                    "won": 1,
-                    "lost": 3,
-                    "points": 1
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
+                    "points": 0
                 },
                 {
-                    "name": "Vikings",
-                    "played": 4,
-                    "won": 1,
-                    "lost": 3,
-                    "points": 1
+                    "name": "Smugglers",
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
+                    "points": 0
+                },
+                {
+                    "name": "Rams",
+                    "played": 0,
+                    "won": 0,
+                    "lost": 0,
+                    "points": 0
                 }
             ]
         }
