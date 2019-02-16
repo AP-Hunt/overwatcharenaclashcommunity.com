@@ -6,9 +6,10 @@
 image: node:6.11.1
 
 pipelines:
+
   default:
-      ## Build step is duplicate on purpose
-      ## You cannot have shared tasks between pipelines    
+    ## Build step is duplicate on purpose
+    ## You cannot have shared tasks between pipelines    
     - step:
         name: Build
         image: node:6.11.1
@@ -18,8 +19,26 @@ pipelines:
           - npm install -g gulp@^4.0.0
           - npm install
           - npm run build
-        artifacts:
-          - dist/**
+
+  branches:
+    master:
+        ## Build step is duplicate on purpose
+        ## You cannot have shared tasks between pipelines    
+      - step:
+          name: Build
+          image: node:6.11.1
+          caches:
+            - node
+          script:
+            - npm install -g gulp@^4.0.0
+            - npm install
+            - npm run build
+
+      - step:
+          name: Tag release
+          script:
+            - git tag -am "Tagging release ${BITBUCKET_BUILD_NUMBER}" release-${BITBUCKET_BUILD_NUMBER}
+            - git push origin release-${BITBUCKET_BUILD_NUMBER}
 
   tags:
     ## Build step is duplicate on purpose
