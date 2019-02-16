@@ -3,20 +3,50 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: node:6.9.4
+image: node:6.11.1
 
 pipelines:
   default:
+      ## Build step is duplicate on purpose
+      ## You cannot have shared tasks between pipelines    
     - step:
-        name: Build and push to S3
+        name: Build
+        image: node:6.11.1
         caches:
           - node
         script:
-          - apt-get update && apt-get install -y python-dev
-          - curl -O https://bootstrap.pypa.io/get-pip.py
-          - python get-pip.py
-          - pip install awscli
+          - npm install -g gulp@^4.0.0
           - npm install
           - npm run build
-          - aws s3 sync --delete dist/ s3://www.overwatcharenaclashcommunity.com
-          - aws cloudfront --region us-east-1 create-invalidation --distribution-id E3H90N4EFBEWF3 --paths "/*"
+        artifacts:
+          - dist/**
+
+  tags:
+    ## Build step is duplicate on purpose
+    ## You cannot have shared tasks between pipelines
+    release-*:
+      - step:
+          name: Build
+          image: node:6.11.1
+          caches:
+            - node
+          script:
+            - npm install -g gulp@^4.0.0
+            - npm install
+            - npm run build
+          artifacts:
+            - dist/**
+
+      - step:
+          name: Deploy to S3
+          image: governmentpaas/awscli
+          script:
+            - chmod +x ./scripts/s3-deploy.sh
+            - ./scripts/s3-deploy.sh
+      - step:
+          name: Invalidate in CloudFront
+          image: governmentpaas/awscli
+          script:
+            - export AWS_DEFAULT_REGION="us-east-1"
+            - chmod +x ./scripts/cloudfront-invalidate.sh
+            - ./scripts/cloudfront-invalidate.sh
