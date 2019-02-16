@@ -6,6 +6,8 @@ const webserver = require("gulp-webserver");
 const fs = require("fs");
 const path = require("path");
 const rename = require("gulp-rename");
+const twitter = require('twitter');
+const process = require("process");
 
 const SOURCES = {
     scss: "src/scss/**/*.scss",
@@ -143,9 +145,34 @@ function watchFiles() {
     watch(SOURCES.pug, buildHTML);
 }
 
+function tweet(done){
+    var client = new twitter({
+        consumer_key: process.env.TWITTER_CONSUMER_KEY,
+        consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+        access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
+        access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
+      });
+
+      var data = importData(SOURCES.data.currentSeason)
+      var season = data["_meta"]["title"]
+      var week = data ["groups"]["week"]
+
+      var message = "Group tables for " + season + " week " + week + " are LIVE! Check them out at https://www.overwatcharenaclashcommunity.com/"
+
+      client.post('statuses/update', {status: message},  function(error, tweet, response) {
+        if(error) {
+            console.error(error);
+            throw error;
+        }
+
+        done();
+      });
+}
+
 exports.default = series(clean, buildCSS, buildHTML, buildJS);
 exports.buildCSS = buildCSS;
 exports.buildJS = buildJS;
 exports.buildHTML = buildHTML;
 exports.serve = serve;
 exports.watch = series(exports.default, serve, watchFiles);
+exports.tweet = tweet;
