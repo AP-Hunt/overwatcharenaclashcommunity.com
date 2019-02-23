@@ -6,7 +6,8 @@
     "build": "gulp",
     "serve": "gulp serve",
     "watch": "gulp watch",
-    "tweet": "gulp tweet"
+    "tweet": "gulp tweet",
+    "tf:apply": "./scripts/generate-aws-vars.sh && ./scripts/tf-apply.sh"
   },
   "repository": {
     "type": "git",
