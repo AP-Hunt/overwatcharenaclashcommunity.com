@@ -1,0 +1,68 @@
+version: 2
+
+orbs:
+  aws-s3: circleci/aws-s3@1.0.0
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node:6.15
+
+    steps:
+      - checkout
+      - run:
+          name: Install packags
+          command: npm install
+      - run:
+          name: Build
+          command: npm run build
+
+  create-release-tag:
+    docker:
+      - image: alpine/git:1.0.7
+    steps:
+      - checkout
+      - run:
+          name: Create git tag
+          command: |
+            git config credential.helper 'cache --timeout=120'
+            git config user.email "email"
+            git config user.name "CI Tagging"
+            git tag -a "test-release-$CIRCLE_SHA1" -m  "$CIRCLE_SHA1"
+            git push -q https://${GITHUB_TOKEN}@github.com/AP-Hunt/overwatcharenaclashcommunity.com.git "test-release-$CIRCLE_SHA1"
+  deploy-to-s3:
+    docker:
+        - image: 'circleci/python:2.7'
+    steps:
+      - attach_workspace:
+          at: ./dist/
+      - aws-s3/sync:
+          from: ./dist/
+          to: 's3://www.overwatcharenaclashcommunity.com'
+
+workflows:
+  version: 2
+
+  main:
+    jobs:
+      - build
+      - create-release-tag:
+          requires:
+            - build
+          filters:
+            branches:
+              only: circle_ci_workflows
+            tags:
+              ignore: /release.*/
+      - deploy-to-s3:
+          requires:
+            - create-release-tag
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /release.*/
+
+
+
+  
