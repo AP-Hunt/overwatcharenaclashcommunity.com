@@ -37,3 +37,9 @@ module "cdn" {
     certificate_arn = "${module.acm.certificate_arn}"
     domain_zone_id = "${module.route53.domain_zone_id}"
 }
+
+module "iam" {
+    source = "modules/iam/"
+    www_bucket = "${module.s3.www_bucket_arn}"
+    cloudfront_distribution = "${module.cdn.distribution_arn}"
+}
