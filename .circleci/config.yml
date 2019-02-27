@@ -43,6 +43,7 @@ jobs:
       - run:
           name: Deploy to S3
           command: |
+            cd $CIRCLE_WORKING_DIRECTORY
             chmod +x ./scripts/s3-deploy.sh
             ./scripts/s3-deploy.sh
 
@@ -55,6 +56,8 @@ jobs:
       - run:
           name: Create a cloudfront invalidation
           command: |
+            cd $CIRCLE_WORKING_DIRECTORY
+
             export AWS_DEFAULT_REGION="us-east-1"
             chmod +x ./scripts/cloudfront-invalidate.sh
             ./scripts/cloudfront-invalidate.sh
