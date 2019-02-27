@@ -38,6 +38,7 @@ jobs:
     docker:
         - image: governmentpaas/awscli
     steps:
+      - checkout
       - attach_workspace:
           at: ./dist/
       - run:
