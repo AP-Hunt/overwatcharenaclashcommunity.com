@@ -38,13 +38,8 @@ jobs:
     docker:
         - image: governmentpaas/awscli
     steps:
-      - run:
-          name: Install git
-          command: |
-            apk add --update git
-      - checkout
       - attach_workspace:
-          at: ./dist/
+          at: ./
       - run:
           name: Deploy to S3
           command: |
@@ -55,7 +50,8 @@ jobs:
     docker:
       - image: governmentpaas/awscli
     steps:
-      - checkout
+      - attach_workspace:
+          at: ./
       - run:
           name: Create a cloudfront invalidation
           command: |
