@@ -38,6 +38,10 @@ jobs:
     docker:
         - image: governmentpaas/awscli
     steps:
+      - run:
+          name: Install git
+          command: |
+            apk add --update git
       - checkout
       - attach_workspace:
           at: ./dist/
