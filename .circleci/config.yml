@@ -104,6 +104,8 @@ workflows:
             tags:
               only: /release.*/
       - tweet:
+          requires:
+            - cloudfront-invalidation
           filters:
             branches:
               ignore: /.*/
