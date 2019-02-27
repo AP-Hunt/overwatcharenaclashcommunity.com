@@ -28,8 +28,15 @@ jobs:
             git config credential.helper 'cache --timeout=120'
             git config user.email "email"
             git config user.name "CI Tagging"
-            git tag -a "test-release-$CIRCLE_SHA1" -m  "$CIRCLE_SHA1"
-            git push -q https://${GITHUB_TOKEN}@github.com/AP-Hunt/overwatcharenaclashcommunity.com.git "test-release-$CIRCLE_SHA1"
+
+            git tag -a "release-$CIRCLE_SHA1" -m  "$CIRCLE_SHA1"
+            git push -q https://${GITHUB_TOKEN}@github.com/AP-Hunt/overwatcharenaclashcommunity.com.git "release-$CIRCLE_SHA1"
+
+            if git diff-tree --no-commit-id --name-only -r $CIRCLE_SHA1 | grep -q "version.txt"; then
+              git tag -a "release-version-$(cat version.txt)" -m "$(cat version.txt)"
+              git push -q https://${GITHUB_TOKEN}@github.com/AP-Hunt/overwatcharenaclashcommunity.com.git "release-version-$(cat version.txt)"
+            fi
+  
   deploy-to-s3:
     docker:
         - image: 'circleci/python:2.7'
@@ -39,6 +46,32 @@ jobs:
       - aws-s3/sync:
           from: ./dist/
           to: 's3://www.overwatcharenaclashcommunity.com'
+
+  cloudfront-invalidation: 
+    docker:
+      - image: governmentpaas/awscli
+    steps:
+      - checkout
+      - run:
+          name: Create a cloudfront invalidation
+          command: |
+            export AWS_DEFAULT_REGION="us-east-1"
+            chmod +x ./scripts/cloudfront-invalidate.sh
+            ./scripts/cloudfront-invalidate.sh
+
+  tweet:
+    docker:
+      - image: circleci/node:6.15
+
+    steps:
+      - checkout
+      - run:
+          name: Install packags
+          command: npm install
+      - run:
+          name: Build
+          command: npm run tweet
+
 
 workflows:
   version: 2
@@ -62,7 +95,17 @@ workflows:
               ignore: /.*/
             tags:
               only: /release.*/
-
-
-
-  
+      - cloudfront-invalidation:
+          requires:
+            - deploy-to-s3
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /release.*/
+      - tweet:
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /release-version-.*/
