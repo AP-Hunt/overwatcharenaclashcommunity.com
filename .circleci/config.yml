@@ -88,8 +88,6 @@ workflows:
             tags:
               ignore: /release.*/
       - deploy-to-s3:
-          requires:
-            - create-release-tag
           filters:
             branches:
               ignore: /.*/
