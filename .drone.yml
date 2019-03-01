@@ -10,8 +10,12 @@ steps:
       - npm run build
 
   - name: Tag release
-    image: alpine/git:1.0.7
+    image: docker:git
+    environment:
+      DEPLOY_SSH_PRIVATE_KEY:
+        from_secret: DEPLOY_SSH_PRIVATE_KEY
     commands:
+      - set -e
       - chmod +x ./scripts/tag-release.sh
       - ./scripts/tag-release.sh
     when:
@@ -20,7 +24,13 @@ steps:
 
   - name: deploy-to-s3
     image: python
+    environment:
+      AWS_ACCESS_KEY_ID:
+        from_secret: AWS_ACCESS_KEY_ID
+      AWS_SECRET_ACCESS_KEY:
+        from_secret: AWS_SECRET_ACCESS_KEY
     commands:
+      - set -e
       - sudo pip install awscli
       - chmod +x ./scripts/s3-deploy.sh
       - ./scripts/s3-deploy.sh
@@ -30,7 +40,13 @@ steps:
 
   - name: cloudfront-invalidation
     image: python
+    environment:
+      AWS_ACCESS_KEY_ID:
+        from_secret: AWS_ACCESS_KEY_ID
+      AWS_SECRET_ACCESS_KEY:
+        from_secret: AWS_SECRET_ACCESS_KEY
     commands:
+      - set -e
       - sudo pip install awscli
       - export AWS_DEFAULT_REGION="us-east-1"
       - chmod +x ./scripts/cloudfront-invalidate.sh
@@ -41,7 +57,17 @@ steps:
 
   - name: tweet
     image: node
+    environment:
+      TWITTER_ACCESS_TOKEN_KEY:
+        from_secret: TWITTER_ACCESS_TOKEN_KEY      
+      TWITTER_ACCESS_TOKEN_SECRET:
+        from_secret: TWITTER_ACCESS_TOKEN_SECRET      
+      TWITTER_CONSUMER_KEY:
+        from_secret: TWITTER_CONSUMER_KEY
+      TWITTER_CONSUMER_SECRET:
+        from_secret: TWITTER_CONSUMER_SECRET
     commands:
+      - set -e
       - npm install
       - npm run tweet
     when:
