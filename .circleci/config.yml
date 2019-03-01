@@ -36,27 +36,26 @@ jobs:
   
   deploy-to-s3:
     docker:
-        - image: governmentpaas/awscli
+        - image: circleci/python
     steps:
-      - attach_workspace:
-          at: ./
+      - checkout
       - run:
           name: Deploy to S3
           command: |
-            cd $CIRCLE_WORKING_DIRECTORY
+            pip install awscli
+
             chmod +x ./scripts/s3-deploy.sh
             ./scripts/s3-deploy.sh
 
   cloudfront-invalidation: 
     docker:
-      - image: governmentpaas/awscli
+      - image: circleci/python
     steps:
-      - attach_workspace:
-          at: ./
+      - checkout
       - run:
           name: Create a cloudfront invalidation
           command: |
-            cd $CIRCLE_WORKING_DIRECTORY
+            pip install awscli
 
             export AWS_DEFAULT_REGION="us-east-1"
             chmod +x ./scripts/cloudfront-invalidate.sh
