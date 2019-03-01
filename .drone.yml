@@ -1,0 +1,49 @@
+---
+kind: pipeline
+name: build-and-tag
+
+steps:
+  - name: build
+    image: node
+    commands:
+      - npm install
+      - npm run build
+
+  - name: Tag release
+    image: alpine/git:1.0.7
+    commands:
+      - chmod +x ./scripts/tag-release.sh
+      - ./scripts/tag-release.sh
+    when:
+      branch:
+        - droneci
+
+  - name: deploy-to-s3
+    image: python
+    commands:
+      - sudo pip install awscli
+      - chmod +x ./scripts/s3-deploy.sh
+      - ./scripts/s3-deploy.sh
+    when:
+      ref:
+        - refs/tags/release-.*
+
+  - name: cloudfront-invalidation
+    image: python
+    commands:
+      - sudo pip install awscli
+      - export AWS_DEFAULT_REGION="us-east-1"
+      - chmod +x ./scripts/cloudfront-invalidate.sh
+      - ./scripts/cloudfront-invalidate.sh
+    when:
+      ref:
+        - refs/tags/release-.*
+
+  - name: tweet
+    image: node
+    commands:
+      - npm install
+      - npm run tweet
+    when:
+      ref:
+        - refs/tags/release-version-*
