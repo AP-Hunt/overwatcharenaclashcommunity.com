@@ -80,7 +80,12 @@ workflows:
 
   main:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              only: /.*/
+            tags:
+              only: /.*/
       - create-release-tag:
           requires:
             - build
