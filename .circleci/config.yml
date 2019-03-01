@@ -80,12 +80,7 @@ workflows:
 
   main:
     jobs:
-      - build:
-          filters:
-            branches:
-              only: /.*/
-            tags:
-              only: /.*/
+      - build
       - create-release-tag:
           requires:
             - build
@@ -95,6 +90,8 @@ workflows:
             tags:
               ignore: /release.*/
       - deploy-to-s3:
+          requires:
+            - build
           filters:
             branches:
               ignore: /.*/
