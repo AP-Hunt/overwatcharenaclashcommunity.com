@@ -72,8 +72,8 @@ async function fillDataInteractive(done){
                             accept = true;
                             var result = await promptUser(group.teams[j].name);
                             
-                            if( (result.won + result.lost) > result.played ) {
-                                console.warn("Won + Lost > Played. Try again.");
+                            if( (result.won + result.lost) != result.played ) {
+                                console.warn("Won + Lost != Played. Try again.");
                                 accept = false;
                                 continue;
                             }
