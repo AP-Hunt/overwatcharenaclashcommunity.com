@@ -10,11 +10,37 @@ block content
             .team
                 h4.accent.collapse #{team.name}
                 h5.accent.collapse (#{team.location})
-                table
-                    tbody
-                        each player in team.players
-                            tr
-                                td #{player.name}
-                                td
-                                    each r in player.roles
-                                        span(class="role "+r)
+
+                if team["championship"].length
+                    h6.accent Champsionship
+                    table
+                        tbody
+                            each player in team["championship"]
+                                tr
+                                    td #{player.name}
+                                    td
+                                        each r in player.roles
+                                            span(class="role "+r)
+
+                if team["challengers"].length
+                    h6.accent Challengers
+                    table
+                        tbody
+                            each player in team["challengers"]
+                                tr
+                                    td #{player.name}
+                                    td
+                                        each r in player.roles
+                                            span(class="role "+r)
+
+                if team["underground"].length
+
+                    h6.accent Underground
+                    table
+                        tbody
+                            each player in team["underground"]
+                                tr
+                                    td #{player.name}
+                                    td
+                                        each r in player.roles
+                                            span(class="role "+r)
