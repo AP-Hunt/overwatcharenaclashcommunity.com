@@ -8,6 +8,8 @@ h6 {
     text-shadow: $color-text 0px 0px 20px;
     font-weight: normal;
 
+    text-transform: capitalize;
+
     &.accent {
         color: $color-accent;
         text-shadow: none;

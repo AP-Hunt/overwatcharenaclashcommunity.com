@@ -1,26 +1,27 @@
-each table in groups.tables
-    div.scrollable
-        table(class="table", id=""+table.id)
-            caption
+.leagues
+    each league in Object.keys(groups.leagues)
+        .league
+            h1 #{league}
+            each table in groups.leagues[league]
                 h4 #{table.name}
+                table(class="table", id=league+"_"+table.id)
+                    thead
+                        tr
+                            td Team
+                            td Played
+                            td Won
+                            td Lost
+                            td(data-sort-default) Points
 
-            thead
-                tr
-                    td Team
-                    td Played
-                    td Won
-                    td Lost
-                    td(data-sort-default) Points
-
-            tbody
-                each team in table.teams
-                    tr
-                        td.team #{team.name}
-                        td.played #{team.played}
-                        td.won #{team.won}
-                        td.lost #{team.lost}
-                        td.points #{team.points}
-        script
-            | new Tablesort(document.getElementById("#{table.id}"), {
-            |    descending: true
-            | })
+                    tbody
+                        each team in table.teams
+                            tr
+                                td.team #{team.name}
+                                td.played #{team.played}
+                                td.won #{team.won}
+                                td.lost #{team.lost}
+                                td.points #{team.points}
+                script
+                    | new Tablesort(document.getElementById("#{league+"_"+table.id}"), {
+                    |    descending: true
+                    | })

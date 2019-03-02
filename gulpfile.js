@@ -16,12 +16,9 @@ const SOURCES = {
     pug: [
         "src/pug/**/*.pug",
         "!src/pug/**/_*",
-        "!src/pug/archives.pug"
     ],
-    pug_archives: "src/pug/archives.pug",
     data: {
         currentSeason: "src/data/current/",
-        archives: "src/data/archives/"
     },
     archives: "src/archives/**/*"
 }
@@ -109,7 +106,6 @@ function serve() {
 
 function watchFiles() {
     watch(SOURCES.data.currentSeason, buildHTML);
-    watch(SOURCES.data.archives, buildHTML);
     watch(SOURCES.js, buildJS);
     watch(SOURCES.scss, buildCSS);
     watch(SOURCES.pug, buildHTML);
