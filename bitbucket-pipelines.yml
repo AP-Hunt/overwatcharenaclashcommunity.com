@@ -3,7 +3,7 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: node:6.11.1
+image: node:8.9.3
 
 pipelines:
 
@@ -12,7 +12,7 @@ pipelines:
     ## You cannot have shared tasks between pipelines    
     - step:
         name: Build
-        image: node:6.11.1
+        image: node:8.9.3
         caches:
           - node
         script:
@@ -26,7 +26,7 @@ pipelines:
         ## You cannot have shared tasks between pipelines    
       - step:
           name: Build
-          image: node:6.11.1
+          image: node:8.9.3
           caches:
             - node
           script:
@@ -46,7 +46,7 @@ pipelines:
     release-*:
       - step:
           name: Build
-          image: node:6.11.1
+          image: node:8.9.3
           caches:
             - node
           script:
