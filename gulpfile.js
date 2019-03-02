@@ -9,6 +9,7 @@ const rename = require("gulp-rename");
 const twitter = require('twitter');
 const process = require("process");
 const { execFile } = require("child_process");
+const { fillDataInteractive } = require("./fill_data_interactive");
 
 const SOURCES = {
     scss: "src/scss/**/*.scss",
@@ -135,6 +136,10 @@ function tweet(done){
       });
 }
 
+function fillData(done){
+    return fillDataInteractive(done);
+}
+
 exports.default = series(clean, buildCSS, buildHTML, buildJS);
 exports.buildCSS = buildCSS;
 exports.buildJS = buildJS;
@@ -142,3 +147,4 @@ exports.buildHTML = buildHTML;
 exports.serve = serve;
 exports.watch = series(exports.default, serve, watchFiles);
 exports.tweet = tweet;
+exports.fillData = fillData;

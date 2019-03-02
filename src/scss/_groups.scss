@@ -5,10 +5,13 @@
     grid-template-columns: repeat(3, auto);
     grid-column-gap: 2em;
     justify-content: stretch;
+    
 
     .league {
         display: grid;
         justify-items: center;
+        align-items: start;
+        align-self: start;
         h1 {
             text-align: center;
         }

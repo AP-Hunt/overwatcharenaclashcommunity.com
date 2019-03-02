@@ -8,7 +8,8 @@
     "watch": "gulp watch",
     "tweet": "gulp tweet",
     "tf:apply": "./scripts/generate-aws-vars.sh && ./scripts/tf-apply.sh",
-    "bumpversion": "./scripts/bump-version.sh"
+    "bumpversion": "./scripts/bump-version.sh",
+    "fillData": "gulp fillData"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "ncp": "^2.0.0",
     "node-sass": "^4.9.4",
     "nodemon": "^1.18.5",
+    "prompt": "^1.0.0",
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6",
     "rimraf": "^2.6.2",
