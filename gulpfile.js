@@ -22,7 +22,8 @@ const SOURCES = {
     data: {
         currentSeason: "src/data/current/",
         archives: "src/data/archives/"
-    }
+    },
+    archives: "src/archives/**/*"
 }
 
 const DESTINATIONS = {
@@ -30,9 +31,7 @@ const DESTINATIONS = {
     js: "dist/js/",
     html: {
         current: "dist/",
-        archives: function (title) {
-            return path.join("dist/archives/", title);
-        }
+        archives: "dist/archives/"
     }
 }
 
@@ -43,7 +42,7 @@ function buildCSS() {
 }
 
 function buildHTML(done) {
-    return series(buildCurrentSeason, buildArchives)(done);
+    return series(buildCurrentSeason, copyArchivesToDist)(done);
 }
 
 function buildCurrentSeason(done) {
@@ -51,39 +50,9 @@ function buildCurrentSeason(done) {
     return renderPug(data, DESTINATIONS.html.current);
 }
 
-function buildArchives(done) {
-    let archiveEntries = fs.readdirSync(SOURCES.data.archives);
-    let generators = [];
-    let archives = { archives: [] };
-    for (var dir in archiveEntries) {
-        if (archiveEntries.hasOwnProperty(dir)) {
-            dir = archiveEntries[dir];
-            let fullPath = path.join(SOURCES.data.archives, dir);
-            let data = importData(fullPath);
-            let outputPath = DESTINATIONS.html.archives(dir);
-            archives.archives.push({
-                "name": data._meta.title,
-                "path": "/archives/"+dir+"/index.html"
-            });
-            generators.push(function () {
-                return renderPug(data, outputPath);
-            });
-        }
-    }
-    let buildArchiveIndex = function(){
-        return src(SOURCES.pug_archives)
-        .pipe(
-            pug({
-                data: archives
-            })
-        )
-        .pipe(rename("index.html"))
-        .pipe(dest(DESTINATIONS.html.archives(".")));
-    }
-
-    generators.push(buildArchiveIndex);
-
-    return parallel(generators)(done);
+function copyArchivesToDist() {
+    return src(SOURCES.archives)
+        .pipe(dest(DESTINATIONS.html.archives))
 }
 
 
