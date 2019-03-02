@@ -1,5 +1,5 @@
 {
-  "week": 3,
+  "week": 4,
   "archive": false,
   "leagues": {
     "championship": [
@@ -9,44 +9,44 @@
         "teams": [
           {
             "name": "Saints",
-            "played": 2,
+            "played": 3,
             "won": 2,
             "lost": 0,
             "points": 2
           },
           {
             "name": "Claymores",
-            "played": 2,
-            "won": 1,
+            "played": 3,
+            "won": 2,
             "lost": 1,
-            "points": 1
+            "points": 2
           },
           {
             "name": "Invincibles",
-            "played": 2,
+            "played": 3,
             "won": 2,
-            "lost": 0,
+            "lost": 1,
             "points": 2
           },
           {
             "name": "Enigmas",
-            "played": 2,
-            "won": 0,
+            "played": 3,
+            "won": 1,
             "lost": 2,
-            "points": 0
+            "points": 1
           },
           {
             "name": "Nighthawks",
-            "played": 2,
+            "played": 3,
             "won": 0,
-            "lost": 2,
+            "lost": 3,
             "points": 0
           },
           {
             "name": "Hunters",
-            "played": 2,
+            "played": 3,
             "won": 1,
-            "lost": 1,
+            "lost": 2,
             "points": 1
           }
         ]
@@ -57,44 +57,44 @@
         "teams": [
           {
             "name": "Spartans",
-            "played": 2,
-            "won": 2,
+            "played": 3,
+            "won": 3,
             "lost": 0,
-            "points": 2
+            "points": 3
           },
           {
             "name": "Vikings",
-            "played": 2,
-            "won": 1,
+            "played": 3,
+            "won": 2,
             "lost": 1,
-            "points": 1
+            "points": 2
           },
           {
             "name": "Harriers",
-            "played": 2,
+            "played": 3,
             "won": 1,
-            "lost": 1,
+            "lost": 2,
             "points": 1
           },
           {
             "name": "Leviathans",
-            "played": 2,
-            "won": 1,
+            "played": 3,
+            "won": 2,
             "lost": 1,
-            "points": 1
+            "points": 2
           },
           {
             "name": "Centurions",
-            "played": 2,
+            "played": 3,
             "won": 1,
-            "lost": 1,
+            "lost": 2,
             "points": 1
           },
           {
             "name": "Brawlers",
-            "played": 2,
+            "played": 3,
             "won": 0,
-            "lost": 2,
+            "lost": 3,
             "points": 0
           }
         ]
@@ -105,10 +105,10 @@
         "teams": [
           {
             "name": "Steelers",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "lost": 0,
-            "points": 1
+            "points": 2
           },
           {
             "name": "Guardians",
@@ -119,23 +119,23 @@
           },
           {
             "name": "Kestrels",
-            "played": 2,
+            "played": 3,
             "won": 2,
-            "lost": 0,
+            "lost": 1,
             "points": 2
           },
           {
             "name": "Lionhearts",
-            "played": 1,
-            "won": 0,
+            "played": 2,
+            "won": 1,
             "lost": 1,
-            "points": 0
+            "points": 1
           },
           {
             "name": "Armada",
-            "played": 2,
+            "played": 3,
             "won": 0,
-            "lost": 2,
+            "lost": 3,
             "points": 0
           }
         ]
@@ -153,30 +153,30 @@
           },
           {
             "name": "Arrows",
-            "played": 1,
-            "won": 1,
-            "lost": 0,
-            "points": 1
-          },
-          {
-            "name": "Swarm",
             "played": 2,
             "won": 2,
             "lost": 0,
             "points": 2
           },
           {
-            "name": "Smugglers",
-            "played": 1,
-            "won": 0,
+            "name": "Swarm",
+            "played": 3,
+            "won": 2,
             "lost": 1,
-            "points": 0
+            "points": 2
+          },
+          {
+            "name": "Smugglers",
+            "played": 2,
+            "won": 1,
+            "lost": 1,
+            "points": 1
           },
           {
             "name": "Rams",
-            "played": 2,
+            "played": 3,
             "won": 0,
-            "lost": 2,
+            "lost": 3,
             "points": 0
           }
         ]
@@ -189,9 +189,9 @@
         "teams": [
           {
             "name": "Guardians",
-            "played": 2,
+            "played": 3,
             "won": 2,
-            "lost": 0,
+            "lost": 1,
             "points": 2
           },
           {
@@ -203,24 +203,24 @@
           },
           {
             "name": "Spartans",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "lost": 0,
-            "points": 1
+            "points": 2
           },
           {
             "name": "Enigmas",
-            "played": 2,
+            "played": 3,
             "won": 0,
-            "lost": 2,
+            "lost": 3,
             "points": 0
           },
           {
             "name": "Nighthawks",
-            "played": 1,
-            "won": 0,
+            "played": 2,
+            "won": 1,
             "lost": 1,
-            "points": 0
+            "points": 1
           }
         ]
       },
@@ -230,24 +230,24 @@
         "teams": [
           {
             "name": "Harriers",
-            "played": 2,
+            "played": 3,
             "won": 2,
-            "lost": 0,
+            "lost": 1,
             "points": 2
           },
           {
             "name": "Hunters",
-            "played": 2,
-            "won": 1,
+            "played": 3,
+            "won": 2,
             "lost": 1,
-            "points": 1
+            "points": 2
           },
           {
             "name": "Pirates",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "lost": 0,
-            "points": 1
+            "points": 2
           },
           {
             "name": "Invincibles",
@@ -258,9 +258,9 @@
           },
           {
             "name": "Kestrels",
-            "played": 1,
+            "played": 2,
             "won": 0,
-            "lost": 1,
+            "lost": 2,
             "points": 0
           }
         ]
@@ -285,16 +285,16 @@
           },
           {
             "name": "Leviathans",
-            "played": 2,
-            "won": 0,
+            "played": 3,
+            "won": 1,
             "lost": 2,
-            "points": 0
+            "points": 1
           },
           {
             "name": "Swarm",
-            "played": 1,
+            "played": 2,
             "won": 0,
-            "lost": 1,
+            "lost": 2,
             "points": 0
           }
         ]
@@ -319,16 +319,16 @@
           },
           {
             "name": "Lionhearts",
-            "played": 2,
-            "won": 0,
+            "played": 3,
+            "won": 1,
             "lost": 2,
-            "points": 0
+            "points": 1
           },
           {
             "name": "Rams",
-            "played": 1,
+            "played": 2,
             "won": 0,
-            "lost": 1,
+            "lost": 2,
             "points": 0
           }
         ]
@@ -341,30 +341,30 @@
         "teams": [
           {
             "name": "Preston Proud",
-            "played": 2,
-            "won": 2,
+            "played": 3,
+            "won": 3,
             "lost": 0,
-            "points": 2
+            "points": 3
           },
           {
             "name": "York Thralls",
-            "played": 2,
+            "played": 3,
             "won": 2,
-            "lost": 0,
+            "lost": 1,
             "points": 2
           },
           {
             "name": "House Of Cleomenes",
-            "played": 2,
-            "won": 1,
+            "played": 3,
+            "won": 2,
             "lost": 1,
-            "points": 1
+            "points": 2
           },
           {
             "name": "Pacifists",
-            "played": 2,
+            "played": 3,
             "won": 1,
-            "lost": 1,
+            "lost": 2,
             "points": 1
           },
           {
@@ -376,16 +376,16 @@
           },
           {
             "name": "Lost On Purpose",
-            "played": 1,
+            "played": 2,
             "won": 0,
-            "lost": 1,
+            "lost": 2,
             "points": 0
           },
           {
             "name": "Nottingham Robin Hoodz",
-            "played": 1,
+            "played": 2,
             "won": 0,
-            "lost": 1,
+            "lost": 2,
             "points": 0
           }
         ]
