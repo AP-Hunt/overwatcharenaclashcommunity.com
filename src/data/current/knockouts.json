@@ -36,15 +36,23 @@
                 {
                     "team_a": "Saints",
                     "team_b": "Steelers",
-                    "winner": null
+                    "winner": "Saints"
                 },
                 {
                     "team_a": "Spartans",
                     "team_b": "Claymores",
-                    "winner": null
+                    "winner": "Spartans"
                 }
             ]
         },
-        "3": { "matches": []}
+        "3": { 
+            "matches": [
+                {
+                    "team_a": "Saints",
+                    "team_b": "Spartans",
+                    "winner": null
+                }        
+            ]
+        }
     }
 }
