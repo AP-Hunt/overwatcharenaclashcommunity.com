@@ -4,54 +4,19 @@
         "team_b": "Saints",
         "winner": "Saints"
     },
-    "begun": true,
+    "begun": false,
     "overall_winner": null,
     "rounds": {
         "1": {
             "matches": [
-                {
-                    "team_a": "Saints",
-                    "team_b": "Pirates",
-                    "winner": "Saints"
-                },
-                {
-                    "team_a": "Steelers",
-                    "team_b": "Vikings",
-                    "winner": "Steelers"
-                },
-                {
-                    "team_a": "Spartans",
-                    "team_b": "Guardians",
-                    "winner": "Spartans"
-                },
-                {
-                    "team_a": "Arrows",
-                    "team_b": "Claymores",
-                    "winner": "Claymores"
-                }
             ]
         },
         "2": { 
             "matches": [
-                {
-                    "team_a": "Saints",
-                    "team_b": "Steelers",
-                    "winner": "Saints"
-                },
-                {
-                    "team_a": "Spartans",
-                    "team_b": "Claymores",
-                    "winner": "Spartans"
-                }
             ]
         },
         "3": { 
-            "matches": [
-                {
-                    "team_a": "Saints",
-                    "team_b": "Spartans",
-                    "winner": "Spartans"
-                }        
+            "matches": [      
             ]
         }
     }

@@ -1,0 +1,175 @@
+.left {
+  float: left;
+  padding: 12px; }
+
+.right {
+  float: right;
+  padding: 12px; }
+
+body {
+  background: #0a081a;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding: 12px; }
+
+p {
+  color: #ffffff;
+  font-size: 1em;
+  margin: 12px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+  text-shadow: #ffffff 0px 0px 20px;
+  font-weight: normal;
+  text-transform: capitalize; }
+  h1.accent,
+  h2.accent,
+  h3.accent,
+  h4.accent,
+  h5.accent,
+  h6.accent {
+    color: #a03ea6;
+    text-shadow: none; }
+  h1.collapse,
+  h2.collapse,
+  h3.collapse,
+  h4.collapse,
+  h5.collapse,
+  h6.collapse {
+    margin: 0.2em; }
+
+h1 {
+  font-size: 2.0em; }
+
+h2 {
+  font-size: 1.8em; }
+
+h3 {
+  font-size: 1.6em; }
+
+h4 {
+  font-size: 1.4em; }
+
+h5 {
+  font-size: 1.2em; }
+
+h6 {
+  font-size: 1.0em; }
+
+em {
+  color: #a03ea6; }
+
+a {
+  color: inherit; }
+  a.accent {
+    color: #a03ea6; }
+
+a:visited {
+  color: inherit; }
+
+strong {
+  color: #ffffff;
+  font-weight: bold; }
+
+.scrollable {
+  overflow-x: auto; }
+
+table.table {
+  border: 0;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 12px; }
+  table.table td {
+    padding: 12px; }
+  table.table thead td {
+    color: #a03ea6; }
+  table.table tbody td {
+    color: #efa13b; }
+  table.table tbody td.team {
+    color: #ffffff; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+  ul li {
+    color: #efa13b;
+    font-size: 1em; }
+
+footer {
+  border: none;
+  clear: both;
+  font-size: 0.8em;
+  float: left; }
+
+.teams {
+  color: #ffffff;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin: 12px; }
+  .teams .team {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 60px 0px;
+    flex-grow: 1;
+    margin: 12px;
+    padding: 12px; }
+    .teams .team span.role {
+      margin: 0 0.5em; }
+    .teams .team .tank::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f3ed"; }
+    .teams .team .dps::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f6e3"; }
+    .teams .team .support::before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f0fe"; }
+
+.leagues {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, auto);
+  grid-column-gap: 2em;
+  justify-content: stretch; }
+  .leagues .league {
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    align-self: start; }
+    .leagues .league h1 {
+      text-align: center; }
+
+.bracket {
+  display: flex;
+  float: left;
+  margin: 12px;
+  width: 100%; }
+
+.round {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: left; }
+  .round ol {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0px;
+    padding: 0px; }
+    .round ol.teams {
+      margin: 12px; }
+      .round ol.teams li {
+        margin: 10px;
+        padding-left: 12px; }
+        .round ol.teams li.winner {
+          border-left: solid 3px #efa13b; }
+        .round ol.teams li:not(.winner) {
+          margin: 13px; }
