@@ -5,9 +5,6 @@ h4,
 h5,
 h6 {
     color: $color-text;
-    text-shadow: $color-text 0px 0px 20px;
-    font-weight: normal;
-
     text-transform: capitalize;
 
     &.accent {
@@ -30,15 +27,19 @@ h6 { font-size: 1.0em; }
 em { color: $color-accent;}
 
 a {
-    color: inherit;
+    color: $color-accent;
 
     &.accent {
-        color: $color-accent
+        color: $color-accent;
     }
-}
 
-a:visited {
-    color: inherit;
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: inherit;
+    }
 }
 
 strong {

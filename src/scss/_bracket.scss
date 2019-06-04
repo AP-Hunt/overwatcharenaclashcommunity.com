@@ -1,38 +1,64 @@
-.bracket {
-    display: flex;
-    float: left;
-    margin: $gutter;
+.knockouts {
     width: 100%;
-}
+    text-align: center;
 
-.round {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    float: left;
-
-    ol {
-        display: block;
+    .bracket {
+        display: flex;
         float: left;
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-    
-        &.teams {
-            margin: $gutter;
+        margin: $gutter;
+        width: 100%;
+        flex-direction: row;
 
-            li { 
-                margin: 10px;
-                padding-left: $gutter;
-            
-                &.winner {
-                    border-left: solid 3px $color-secondary;
+        .rounds {
+            width: 66%;
+            display: flex;
+            align-self: center;
+            justify-content: space-between;
+
+            .round {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                float: left;
+
+                .title {
+                    display: flex;
+                    justify-self: flex-start;
                 }
 
-                &:not(.winner) {
-                    margin: 13px;
+                ol {
+                    display: block;
+                    float: left;
+                    list-style: none;
+                    margin: 0px;
+                    padding: 0px;
+                
+                    &.teams {
+                        margin: $gutter;
+
+                        li { 
+                        
+                            padding-left: $gutter;
+                            margin-bottom: $gutter;
+
+                            &.winner {
+                                border-left: solid $gutter $color-secondary;
+                            }
+
+                            &:not(.winner) {
+                                border-left: solid $gutter $color-background;
+                            }
+                        }
+                    }
                 }
             }
+        }
+    
+        .winner-announcement {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 }

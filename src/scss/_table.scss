@@ -12,6 +12,15 @@ table.table {
         padding: $gutter;
     }
 
+    caption {
+        background-color: $color-secondary;
+        width: 100%;
+        font-weight: bold;
+        color: $color-secondary-text;
+
+        padding: $gutter/2;
+    }
+
     thead {
         td {
             color: $color-accent

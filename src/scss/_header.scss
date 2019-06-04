@@ -1,3 +1,7 @@
+header {
+   text-align: center;
+}
+
 .head_text {
     width: 100%;
 
@@ -9,5 +13,18 @@
     aside {
         width: 50%;
         float: right;
+    }
+}
+.nav {
+    display: flex;
+    width: 100%;
+    float: left;
+
+    justify-content: center;
+
+    ul {
+        li {
+            float: left;
+        }
     }
 }

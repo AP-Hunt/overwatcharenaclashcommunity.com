@@ -1,10 +1,11 @@
 .leagues
     each league in Object.keys(groups.leagues)
         .league
-            h1 #{league}
+            h2 #{league}
             each table in groups.leagues[league]
-                h4 #{table.name}
                 table(class="table", id=league+"_"+table.id)
+                    caption
+                        | #{table.name}
                     thead
                         tr
                             td Team

@@ -18,28 +18,30 @@ html(lang="en")
         link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous")
 
     body
-        if _meta.has_begun
-            h1 #{_meta.title} #{title}
-            if _meta.archive
-                h2.accent You are viewing a previous season. Click #[a.accent(href="/") here] to see the current season
-            h4.collapse 
-                a(href="index.html") Tables
-                | &nbsp; | &nbsp;
-                a(href="teams.html") Teams
-                unless _meta.archive
-                    | &nbsp; | &nbsp;
-                    a(href="/archives/index.html") Archives
-            unless _meta.archive
-                p
-                    | Tables are updated every Sunday, after the weekly recap
-                    | show has aired (and after I've seen it)
+        header 
+            if _meta.has_begun
+                header 
+                    h1 #{_meta.title} #{title}
+                    if _meta.archive
+                        h2.accent You are viewing a previous season. Click #[a.accent(href="/") here] to see the current season
 
-            hr
-         
-            block content
-        else
-            h1 #{_meta.title} has not begun yet!
-            h4.collapse
-                a(href="/archives/index.html") Previous Seasons
+                    .nav
+                        ul
+                            li 
+                                h4.collapse 
+                                    a(href="index.html") Tables
+                            li
+                                h4.collapse
+                                    a(href="teams.html") Teams
+                            unless _meta.archive
+                                li
+                                    h4.collapse
+                                        a(href="/archives/index.html") Archives
+                block content
+            else
+                header 
+                    h1 #{_meta.title} has not begun yet!
+                    h4.collapse
+                        a(href="/archives/index.html") Previous Seasons
 
-            p Visit #[a(href="https://www.belong.gg/welcome-to-overwatch-arena-clash/") Belong.gg] to find out how to get involved.
+                    p Visit #[a(href="https://www.belong.gg/welcome-to-overwatch-arena-clash/") Belong.gg] to find out how to get involved.
