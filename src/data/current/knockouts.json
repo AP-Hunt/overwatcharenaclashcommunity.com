@@ -50,7 +50,7 @@
                 {
                     "team_a": "Saints",
                     "team_b": "Spartans",
-                    "winner": null
+                    "winner": "Spartans"
                 }        
             ]
         }
