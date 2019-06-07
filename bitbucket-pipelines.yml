@@ -71,8 +71,3 @@ pipelines:
             - export AWS_DEFAULT_REGION="us-east-1"
             - chmod +x ./scripts/cloudfront-invalidate.sh
             - ./scripts/cloudfront-invalidate.sh
-
-      - step:
-          name: Tweet
-          script:
-            - npm run tweet
