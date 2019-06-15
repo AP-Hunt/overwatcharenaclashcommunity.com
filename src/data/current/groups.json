@@ -25,58 +25,102 @@
       "challenger": []
     }
   },
-  "week": 0,
+  "week": 1,
   "archive": false,
   "leagues": {
     "championship": [
       {
         "id": "group-1",
         "name": "Group 1",
-        "teams": []
+        "teams": [
+          { "name": "Spartans", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Swarm", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Harriers", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Armada", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Nighthawks", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Rams", "played": 0, "won": 0, "lost": 0, "points": 0 }
+        ]
       },
       {
         "id": "group-2",
         "name": "Group 2",
-        "teams": [ ]
+        "teams": [
+          { "name": "Saints", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Pirates", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Smugglers", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Hunters", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Brawlers", "played": 0, "won": 0, "lost": 0, "points": 0 }
+         ]
       },
       {
         "id": "group-3",
         "name": "Group 3",
-        "teams": []
+        "teams": [
+          { "name": "Steelers", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Guardians", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Leviathans", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Centurions", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Lionhearts", "played": 0, "won": 0, "lost": 0, "points": 0 }
+        ]
       },
       {
         "id": "group-4",
         "name": "Group 4",
-        "teams": []
+        "teams": [
+          { "name": "Claymores", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Invincibles", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Vikings", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Kestrels", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Enigmas", "played": 0, "won": 0, "lost": 0, "points": 0 }
+        ]
       }
     ],
     "challenger": [
       {
         "id": "group-1",
         "name": "Group 1",
-        "teams": []
+        "teams": [
+          { "name": "Spartans", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Vikings", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Pirates", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Enigmas", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Saints", "played": 0, "won": 0, "lost": 0, "points": 0 }
+        ]
       },
       {
         "id": "group-2",
         "name": "Group 2",
-        "teams": []
+        "teams": [
+          { "name": "Claymores", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Guardians", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Armada", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Lionhearts", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Smugglers", "played": 0, "won": 0, "lost": 0, "points": 0 }
+        ]
       },
       {
         "id": "group-3",
         "name": "Group 3",
-        "teams": []
-      },
-      {
-        "id": "group-4",
-        "name": "Group 4",
-        "teams": []
+        "teams": [
+          { "name": "Swarm", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Invincible", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Nighthawks", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Kestrels", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Rams", "played": 0, "won": 0, "lost": 0, "points": 0 }
+        ]
       }
     ],
     "underground": [
       {
         "id": "group-1",
         "name": "Group 1",
-        "teams": []
+        "teams": [
+          { "name": "Nomad (Saints)", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Team Evolution (Saints)", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Team Name TBC (Swarm)", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "6 Bros Chillin' in a Hot Tub (Guardians)", "played": 0, "won": 0, "lost": 0, "points": 0 },
+          { "name": "Chaotic Flustercuck (Guardians)", "played": 0, "won": 0, "lost": 0, "points": 0 }
+        ]
       }
     ]
   }

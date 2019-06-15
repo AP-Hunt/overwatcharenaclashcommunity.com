@@ -11,8 +11,22 @@
     {
       "name": "Armada",
       "location": "Plymouth",
-      "championship": [],
-      "challengers": [],
+      "championship": [
+        { "name": "GiBzMate", "roles": [] },
+        { "name": "Cynade", "roles": [] },
+        { "name": "Dovah (C)", "roles": [] },
+        { "name": "Loki", "roles": [] },
+        { "name": "UncleBen", "roles": [] },
+        { "name": "TheDong", "roles": [] }
+      ],
+      "challengers": [
+        { "name": "BlackGh0st", "roles": [] },
+        { "name": "Wallcroft", "roles": [] },
+        { "name": "JWaterfield", "roles": [] },
+        { "name": "N7StormBreaker", "roles": [] },
+        { "name": "Blaze", "roles": [] },
+        { "name": "yupma", "roles": [] }
+      ],
       "underground": []
     },
     {
@@ -25,141 +39,433 @@
     {
       "name": "Brawlers",
       "location": "Bristol",
-      "championship": [],
+      "championship": [
+        { "name": "Smith", "roles": [] },
+        { "name": "Vlad", "roles": [] },
+        { "name": "Ruddi", "roles": [] },
+        { "name": "Yoyo", "roles": [] },
+        { "name": "Anri", "roles": [] },
+        { "name": "CherryDot", "roles": [] }
+      ],
       "challengers": [],
       "underground": []
     },
     {
       "name": "Centurions",
       "location": "Colchester",
-      "championship": [],
+      "championship": [
+        { "name": "C3L3", "roles": [] },
+        { "name": "Mastertomahawk", "roles": [] },
+        { "name": "EMSCAT", "roles": [] },
+        { "name": "Yoshi", "roles": [] },
+        { "name": "UnoUwUOwO567", "roles": [] },
+        { "name": "TheRubyFox", "roles": [] },
+        { "name": "HaHaHa", "roles": [] }
+      ],
       "challengers": [],
       "underground": []
     },
     {
       "name": "Claymores",
       "location": "Glasgow",
-      "championship": [],
-      "challengers": [],
+      "championship": [
+        { "name": "Rory", "roles": [] },
+        { "name": "Duk", "roles": [] },
+        { "name": "MammaMia", "roles": [] },
+        { "name": "RamRanch", "roles": [] },
+        { "name": "DomDom", "roles": [] },
+        { "name": "Leeky", "roles": [] }
+      ],
+      "challengers": [
+        { "name": "Aphrodite", "roles": [] },
+        { "name": "Carmi", "roles": [] },
+        { "name": "Terravist", "roles": [] },
+        { "name": "Spiderbot1", "roles": [] },
+        { "name": "zzredtiger", "roles": [] },
+        { "name": "KlonoaFan", "roles": [] },
+        { "name": "amberhope", "roles": [] }
+      ],
       "underground": []
     },
     {
       "name": "Enigmas",
       "location": "Milton Keynes",
-      "championship": [],
-      "challengers": [],
+      "championship": [
+        { "name": "TheMightyCod", "roles": [] },
+        { "name": "The129", "roles": [] },
+        { "name": "DeeEmmSee", "roles": [] },
+        { "name": "Zenzetsu", "roles": [] },
+        { "name": "Karma", "roles": [] },
+        { "name": "Klawlor", "roles": [] },
+        { "name": "Delstan", "roles": [] }
+      ],
+      "challengers": [
+        { "name": "MMsicarius", "roles": [] },
+        { "name": "VintageEx", "roles": [] },
+        { "name": "DarkendKurai", "roles": [] },
+        { "name": "FunkyWeed", "roles": [] },
+        { "name": "Engineus", "roles": [] },
+        { "name": "FloofLeo", "roles": [] },
+        { "name": "FREDDIEF92", "roles": [] }
+      ],
       "underground": []
     },
     {
       "name": "Guardians",
       "location": "Gateshead",
-      "championship": [],
-      "challengers": [],
-      "underground": []
+      "championship": [
+        { "name": "FRX", "roles": [] },
+        { "name": "SWORDZY", "roles": [] },
+        { "name": "MAJOR", "roles": [] },
+        { "name": "SCRUB", "roles": [] },
+        { "name": "ADAM", "roles": [] },
+        { "name": "DECY", "roles": [] },
+        { "name": "LARGE YIKES", "roles": [] }        
+      ],
+      "challengers": [
+        { "name": "NIFERJC", "roles": [] },
+        { "name": "KNIGHTOWL", "roles": [] },
+        { "name": "WILDFIRE", "roles": [] },
+        { "name": "CHARVEY", "roles": [] },
+        { "name": "KNIGHT OF ETRO", "roles": [] },
+        { "name": "Johnwillrey", "roles": [] }
+      ],
+      "underground": [
+        { "name": "Ross", "roles": [] },
+        { "name": "Anarchy", "roles": [] },
+        { "name": "Tredenix", "roles": [] },
+        { "name": "Lildude123", "roles": [] },
+        { "name": "Ltlemon", "roles": [] },
+        { "name": "hezzaheron", "roles": [] },
+        { "name": "Dimeister88", "roles": [] },
+        { "name": "Yates", "roles": [] },
+        { "name": "FIREFOOF", "roles": [] },
+        { "name": "ELECTROPUFF", "roles": [] },
+        { "name": "NOTFORMATT", "roles": [] },
+        { "name": "LordGrim", "roles": [] }
+      ]
     },
     {
       "name": "Harriers",
       "location": "Kingston",
-      "championship": [],
+      "championship": [
+        { "name": "Mini", "roles": [] },
+        { "name": "Shy", "roles": [] },
+        { "name": "FearfulPepper", "roles": [] },
+        { "name": "Lokii", "roles": [] },
+        { "name": "Idle", "roles": [] },
+        { "name": "Leo", "roles": [] },
+        { "name": "barnyard", "roles": [] }
+      ],
       "challengers": [],
       "underground": []
     },
     {
       "name": "Hunters",
       "location": "Hull",
-      "championship": [],
+      "championship": [
+        { "name": "j0eiff", "roles": [] },
+        { "name": "tinnusmannus", "roles": [] },
+        { "name": "Jonny", "roles": [] },
+        { "name": "xiord", "roles": [] },
+        { "name": "Karp20", "roles": [] },
+        { "name": "eastytwo", "roles": [] }
+      ],
       "challengers": [],
       "underground": []
     },
     {
       "name": "Invincibles",
       "location": "Preston",
-      "championship": [],
-      "challengers": [],
+      "championship": [
+        { "name": "Dwaema", "roles": [] },
+        { "name": "Atcha6", "roles": [] },
+        { "name": "Theredstones", "roles": [] },
+        { "name": "chlasea", "roles": [] },
+        { "name": "eVaDe", "roles": [] },
+        { "name": "Curio", "roles": [] }
+      ],
+      "challengers": [
+        { "name": "ETthedeerfox", "roles": [] },
+        { "name": "Coyne", "roles": [] },
+        { "name": "Aesthetic", "roles": [] },
+        { "name": "Noots", "roles": [] },
+        { "name": "Hikari", "roles": [] },
+        { "name": "Aethon", "roles": [] },
+        { "name": "Charlieg4536", "roles": [] }
+      ],
       "underground": []
     },
     {
       "name": "Kestrels",
       "location": "Craigavon",
-      "championship": [],
-      "challengers": [],
+      "championship": [
+        { "name": "HXROIN", "roles": [] },
+        { "name": "oogabooga", "roles": [] },
+        { "name": "TonZy", "roles": [] },
+        { "name": "Alias", "roles": [] },
+        { "name": "Yagæ", "roles": [] },
+        { "name": "TrashBat", "roles": [] },
+        { "name": "Kuriboh", "roles": [] }
+      ],
+      "challengers": [
+        { "name": "Mhall", "roles": [] },
+        { "name": "Guardian", "roles": [] },
+        { "name": "TCrossey", "roles": [] },
+        { "name": "RaisinPop", "roles": [] },
+        { "name": "Blank82", "roles": [] },
+        { "name": "1mm3r510n", "roles": [] },
+        { "name": "Minimac", "roles": [] }
+      ],
       "underground": []
     },
     {
       "name": "Leviathans",
       "location": "West Thurrock",
-      "championship": [],
+      "championship": [
+        { "name": "R44IN", "roles": [] },
+        { "name": "Serendipity", "roles": [] },
+        { "name": "MRADRENELINE", "roles": [] },
+        { "name": "WeiYK", "roles": [] },
+        { "name": "TGOHH", "roles": [] },
+        { "name": "YoShane", "roles": [] }        
+      ],
       "challengers": [],
       "underground": []
     },
     {
       "name": "Lionhearts",
       "location": "London Wardour Street",
-      "championship": [],
-      "challengers": [],
+      "championship": [
+        { "name": "Supportbot", "roles": [] },
+        { "name": "Kai", "roles": [] },
+        { "name": "MeanMachine", "roles": [] },
+        { "name": "Romansparta", "roles": [] },
+        { "name": "BeamClaws", "roles": [] },
+        { "name": "Yanny", "roles": [] },
+        { "name": "Riks", "roles": [] }
+      ],
+      "challengers": [
+        { "name": "UglyClucklin", "roles": [] },
+        { "name": "solidrock", "roles": [] },
+        { "name": "Lyonsblood", "roles": [] },
+        { "name": "Greenlily", "roles": [] },
+        { "name": "Codeclipse", "roles": [] },
+        { "name": "Parmenion", "roles": [] },
+        { "name": "Badger", "roles": [] }        
+      ],
       "underground": []
     },
     {
       "name": "Nighthawks",
       "location": "Norfolk",
-      "championship": [],
-      "challengers": [],
+      "championship": [
+        { "name": "Omi", "roles": [] },
+        { "name": "Toxic", "roles": [] },
+        { "name": "Hammy", "roles": [] },
+        { "name": "Jesus", "roles": [] },
+        { "name": "Batsy", "roles": [] },
+        { "name": "J3B5T3R", "roles": [] }
+      ],
+      "challengers": [
+        
+        { "name": "Daxy", "roles": [] },
+        { "name": "JDMtom", "roles": [] },
+        { "name": "alijmc", "roles": [] },
+        { "name": "Fabled", "roles": [] },
+        { "name": "Zanlock", "roles": [] },
+        { "name": "Fluxzie", "roles": [] }
+      ],
       "underground": []
     },
     {
       "name": "Pirates",
       "location": "Portsmouth",
-      "championship": [],
-      "challengers": [],
+      "championship": [
+        { "name": "Brute", "roles": [] },
+        { "name": "Dapper", "roles": [] },
+        { "name": "Padshack", "roles": [] },
+        { "name": "IDWBU", "roles": [] },
+        { "name": "Stormbull", "roles": [] },
+        { "name": "Disclosure", "roles": [] },
+        { "name": "Doowhop", "roles": [] }        
+      ],
+      "challengers": [
+        { "name": "ItsMophead", "roles": [] },
+        { "name": "Sheep", "roles": [] },
+        { "name": "HotChoc", "roles": [] },
+        { "name": "MANSNOTHOT", "roles": [] },
+        { "name": "Giggles", "roles": [] },
+        { "name": "Flappy", "roles": [] }
+      ],
       "underground": []
     },
     {
       "name": "Rams",
       "location": "Bradford",
-      "championship": [],
-      "challengers": [],
+      "championship": [
+        { "name": "peatrack", "roles": [] },
+        { "name": "Utsuhokuu", "roles": [] },
+        { "name": "ChronoByte", "roles": [] },
+        { "name": "aMEIzing", "roles": [] },
+        { "name": "Manchild", "roles": [] },
+        { "name": "Emiko", "roles": [] }
+      ],
+      "challengers": [
+        { "name": "Lumi", "roles": [] },
+        { "name": "Volio", "roles": [] },
+        { "name": "Nerd Britannia", "roles": [] },
+        { "name": "NekoCez", "roles": [] },
+        { "name": "Narthalion", "roles": [] },
+        { "name": "ETCH", "roles": [] }
+      ],
       "underground": []
     },
     {
       "name": "Saints",
       "location": "Cardiff",
-      "championship": [],
-      "challengers": [],
-      "underground": []
+      "championship": [
+        { "name": "Lynx", "roles": [] },
+        { "name": "Hazzard", "roles": [] },
+        { "name": "Shades", "roles": [] },
+        { "name": "McMagicMarv", "roles": [] },
+        { "name": "Frostbite", "roles": [] },
+        { "name": "Cronenberg", "roles": [] },
+        { "name": "mya", "roles": [] }
+      ],
+      "challengers": [
+        { "name": "RogueBrogue ", "roles": [] },
+        { "name": "LunaBacon ", "roles": [] },
+        { "name": "FunLovinCrim", "roles": [] },
+        { "name": "END", "roles": [] },
+        { "name": "Skjöldur", "roles": [] },
+        { "name": "Alderamir", "roles": [] },
+        { "name": "Frosty", "roles": [] }
+      ],
+      "underground": [
+        { "name": "LostSpaceman", "roles": [] },
+        { "name": "Toast", "roles": [] },
+        { "name": "Dread", "roles": [] },
+        { "name": "OtakuBabe ", "roles": [] },
+        { "name": "Preece ", "roles": [] },
+        { "name": "Otaku4Life", "roles": [] },
+        { "name": "RobotNinja", "roles": [] },
+        { "name": "Pring", "roles": [] },
+        { "name": "Bobertwales", "roles": [] },
+        { "name": "Frayed", "roles": [] },
+        { "name": "Dragon", "roles": [] },
+        { "name": "WASABIWAR17", "roles": [] }        
+      ]
     },
     {
       "name": "Smugglers",
       "location": "Bristol",
-      "championship": [],
-      "challengers": [],
+      "championship": [
+        { "name": "wuntrickmei", "roles": [] },
+        { "name": "Dbusking", "roles": [] },
+        { "name": "Aravash", "roles": [] },
+        { "name": "QuantumDelta", "roles": [] },
+        { "name": "Rexxy2k", "roles": [] },
+        { "name": "Mars", "roles": [] },
+        { "name": "sodiryfe", "roles": [] }
+      ],
+      "challengers": [
+        { "name": "Concorde", "roles": [] },
+        { "name": "kavanope", "roles": [] },
+        { "name": "okmanletmein", "roles": [] },
+        { "name": "Jelly", "roles": [] },
+        { "name": "Dasmithers", "roles": [] },
+        { "name": "Jaffa", "roles": [] },
+        { "name": "Meads", "roles": [] }
+      ],
       "underground": []
     },
     {
       "name": "Spartans",
       "location": "Stratford",
-      "championship": [],
-      "challengers": [],
+      "championship": [
+        { "name": "Hamerfal", "roles": [] },
+        { "name": "Kohhtenks", "roles": [] },
+        { "name": "Elementwizard", "roles": [] },
+        { "name": "Feezdog", "roles": [] },
+        { "name": "Cheek", "roles": [] },
+        { "name": "Jarew", "roles": [] },
+        { "name": "Darkdagger", "roles": [] }
+      ],
+      "challengers": [
+        { "name": "Jackpot", "roles": [] },
+        { "name": "DAVEHardcore", "roles": [] },
+        { "name": "Sora", "roles": [] },
+        { "name": "Adroit", "roles": [] },
+        { "name": "SaddMatt", "roles": [] },
+        { "name": "Fox", "roles": [] },
+        { "name": "Bear", "roles": [] }        
+      ],
       "underground": []
     },
     {
       "name": "Steelers",
       "location": "Teeside",
-      "championship": [],
+      "championship": [
+        { "name": "RuggyRam", "roles": [] },
+        { "name": "Ellroy678", "roles": [] },
+        { "name": "Lythiium", "roles": [] },
+        { "name": "Quantum", "roles": [] },
+        { "name": "Aggression", "roles": [] },
+        { "name": "Caeruleus", "roles": [] },
+        { "name": "Lyond", "roles": [] }        
+      ],
       "challengers": [],
       "underground": []
     },
     {
       "name": "Swarm",
       "location": "Manchester",
-      "championship": [],
-      "challengers": [],
-      "underground": []
+      "championship": [
+        { "name": "ŴȊZZǺȐD", "roles": [] },
+        { "name": "MBromi", "roles": [] },
+        { "name": "HorrocksKid", "roles": [] },
+        { "name": "Zealotspine", "roles": [] },
+        { "name": "Mickybee", "roles": [] },
+        { "name": "MomoKona", "roles": [] },
+        { "name": "Nyam", "roles": [] }
+      ],
+      "challengers": [
+        { "name": "RStockton", "roles": [] },
+        { "name": "Cameron", "roles": [] },
+        { "name": "Kspr", "roles": [] },
+        { "name": "JSmith", "roles": [] },
+        { "name": "sangdolie", "roles": [] },
+        { "name": "Xerothermic", "roles": [] }
+      ],
+      "underground": [
+        { "name": "Mcdonald", "roles": [] },
+        { "name": "Ryan", "roles": [] },
+        { "name": "Thaim", "roles": [] },
+        { "name": "Thaim", "roles": [] },
+        { "name": "Brennan", "roles": [] },
+        { "name": "Price", "roles": [] }        
+      ]
     },
     {
       "name": "Vikings",
       "location": "York",
-      "championship": [],
-      "challengers": [],
+      "championship": [
+        { "name": "BRUUNS", "roles": [] },
+        { "name": "ORTHODEUX", "roles": [] },
+        { "name": "FIVES", "roles": [] },
+        { "name": "MASBLAKE", "roles": [] },
+        { "name": "HARIBOE", "roles": [] },
+        { "name": "BAYFISH", "roles": [] }        
+      ],
+      "challengers": [
+        { "name": "LUNAWOLFIE", "roles": [] },
+        { "name": "SCRIBBLE", "roles": [] },
+        { "name": "DERT", "roles": [] },
+        { "name": "JAYCEEACE", "roles": [] },
+        { "name": "ALEXIOS", "roles": [] },
+        { "name": "vBlakey", "roles": [] }        
+      ],
       "underground": []
     }
   ]
