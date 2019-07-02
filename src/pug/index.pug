@@ -1,15 +1,12 @@
 extends _layout.pug
 
 block vars
-    - var title = "Group Tables (Week "+ groups.week + ")"
+    - var title = "Home"
 
 block content 
-    div.knockouts
-        include _knockouts.pug
-
-    .tables
-        script(src="js/tablesort.min.js")
-        script(src="js/sorts/tablesort.number.min.js")
-
-        include _groups.pug
+    h1 Belong.gg maintain Up-To-Date tables on #[a(href="https://challonge.com") Challonge]!
+    p Use the links below to to find them.
             
+    section.challonge-links
+        a.massive(href="https://challonge.com/ACSU19OWCMP") Championship
+        a.massive(href="https://challonge.com/ACSU19OWCHL") Challenger

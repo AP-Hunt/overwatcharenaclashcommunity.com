@@ -10,3 +10,22 @@ p {
     font-size: 1em;
     margin: $gutter;
 }
+
+.main {
+    width: 100%;
+    text-align: center;
+}
+
+.challonge-links {
+    display: flex;
+    flex-direction: column;
+    clear: both;
+    width: 100%;
+    padding-top: $gutter;
+
+    a.massive {
+        align-self: center;
+        justify-self: flex-end;
+        flex-basis: 100%;
+    }
+}

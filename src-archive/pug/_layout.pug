@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+    block vars
+    head
+        meta(charset="utf-8")
+        meta(property="og:title", content=_meta.title + " " + title)
+        meta(property="og:url" content="https://www.overwatcharenaclashcommunity.com")
+        meta(property="og:description" content="Unofficial Overwatch Arena Clash information & community links")
+        
+        meta(property="twitter:card" content="summary")
+        meta(property="twitter:site" content="Overwatch Arena Clash Community")
+        meta(property="twitter:title" content=_meta.title + " " + title)
+        meta(property="twitter:description" content="Unofficial Overwatch Arena Clash information & community links")
+
+        title #{_meta.title} #{title}
+        link(rel="stylesheet" href="/css/main.css")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/solid.css" integrity="sha384-uKQOWcYZKOuKmpYpvT0xCFAs/wE157X5Ua3H5onoRAOCNkJAMX/6QF0iXGGQV9cP" crossorigin="anonymous")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous")
+
+    body
+        header 
+            if _meta.has_begun
+                header 
+                    h1 #{_meta.title} #{title}
+                    p The site is in no way afilliated with #[a(href="https://www.belong.gg/") Belong.gg].
+                    if _meta.archive
+                        h2.accent You are viewing a previous season. Click #[a.accent(href="/") here] to see the current season
+
+                    .nav
+                        ul
+                            li 
+                                h4.collapse 
+                                    a(href="index.html") Tables
+                            li
+                                h4.collapse
+                                    a(href="teams.html") Teams
+                            unless _meta.archive
+                                li
+                                    h4.collapse
+                                        a(href="/archives/index.html") Archives
+                block content
+            else
+                header 
+                    h1 #{_meta.title} has not begun yet!
+                    h4.collapse
+                        a(href="/archives/index.html") Previous Seasons
+
+                    p Visit #[a(href="https://www.belong.gg/welcome-to-overwatch-arena-clash/") Belong.gg] to find out how to get involved.
+                    p The site is in no way afilliated with #[a(href="https://www.belong.gg/") Belong.gg].
+
+        footer
+            p
+            | This is a very <em>unofficial</em> site run by a fan of, and player in, the Belong.gg Arena Clash Overwatch tournaments.
+            
+            p
+            | The site is in no way afilliated with #[a(href="https://www.belong.gg/") Belong.gg].
+
+            p
+            | If anyone from Belong.gg would like to talk about this site, I'm Badger in the offiical Arena Clash discord. I'm open
+            | to not running this site, all you have to do is ask.

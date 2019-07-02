@@ -1,0 +1,31 @@
+if knockouts.begun
+    h2 Knockout Stages
+
+    section.bracket
+        .rounds
+            each round, number in knockouts.rounds
+                section.round
+                    ol(class="round-"+number)
+                        each match in round.matches
+                            li.match
+                                - var team_a_winner = (match.winner == match.team_a)? true : false;
+                                - var played = (match.winner != null)? true : false;
+                                if played
+                                    if team_a_winner
+                                        ol.teams
+                                            li.winner #{match.team_a}
+                                            li #{match.team_b}
+                                    else
+                                        ol.teams
+                                            li #{match.team_a}
+                                            li.winner #{match.team_b}
+                                else
+                                    ol.teams
+                                        li #{match.team_a}
+                                        li #{match.team_b}
+
+        - var completed = (knockouts.overall_winner != null)? true : false;
+        if completed
+            .winner-announcement
+                h1 #{_meta.title} Winner
+                h1.accent(style="text-align: center") #{knockouts.overall_winner}

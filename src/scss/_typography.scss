@@ -40,6 +40,16 @@ a {
     &:visited {
         color: inherit;
     }
+
+    &.massive {
+        font-size: 200%;
+
+        background-color: $color-secondary;
+        color: $color-secondary-text;
+
+        padding: $gutter*2;
+        margin: $gutter/2;
+    }
 }
 
 strong {

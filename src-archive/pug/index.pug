@@ -1,0 +1,15 @@
+extends _layout.pug
+
+block vars
+    - var title = "Group Tables (Week "+ groups.week + ")"
+
+block content 
+    div.knockouts
+        include _knockouts.pug
+
+    .tables
+        script(src="js/tablesort.min.js")
+        script(src="js/sorts/tablesort.number.min.js")
+
+        include _groups.pug
+            
